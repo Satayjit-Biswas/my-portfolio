@@ -1,0 +1,169 @@
+/*======================
+01. Google fonts
+========================*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap");
+
+/*======================
+02. Basic css
+========================*/
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+strong,
+i,
+ol,
+ul,
+li,
+form,
+label,
+footer,
+header,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 10px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Roboto", sans-serif;
+}
+h3 {
+    font-size: 2.8rem;
+}
+h4 {
+    font-size: 3rem;
+    margin-bottom: 7rem;
+}
+p {
+    font-family: "Heebo", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #a2a0a0;
+}
+.f_color {
+    color: #ffff00;
+}
+
+::-moz-selection {
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 0);
+}
+::selection {
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 0);
+}
+
+.custom_btn {
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.custom_btn::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #ffff00;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.custom_btn:hover::before {
+    width: 100%;
+}
+.custom_btn::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #ffff00;
+    top: 0;
+    right: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.custom_btn:hover::after {
+    width: 100%;
+}
+.custom_btn:hover {
+    color: #ffffff;
+}
+
+.custom_btn span {
+    position: absolute;
+    background-color: #ffff00;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    width: 2px;
+    height: 0;
+    z-index: 1;
+}
+
+.custom_btn .left_border {
+    bottom: 0;
+    left: 0;
+}
+.custom_btn .right_border {
+    right: 0;
+    top: 0;
+}
+.custom_btn:hover span {
+    height: 100% !important;
+}
+body {
+    color: #d0d0d0;
+    line-height: 26px;
+    font-family: "Roboto", sans-serif;
+    background-color: #000000;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.custom_btn:focus,
+a:focus,
+input:focus,
+textarea:focus {
+    outline: none;
+}

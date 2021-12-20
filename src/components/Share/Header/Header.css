@@ -1,0 +1,77 @@
+.header_area {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo a img {
+    max-width: 260px;
+  }
+.menu {
+    text-align: right;
+}
+.menu li,
+.menu li a {
+    display: inline-block;
+    color: #d0d0d0;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0;
+    margin-left: 15px;
+    line-height: 32px;
+}
+.menu li a {
+    position: relative;
+}
+.menu > li > a.active,
+.menu > li > a:hover,
+.menu > li > a:focus {
+    color: #ffff00;
+}
+.menu li a::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #ffff00;
+    top: 25px;
+    border-radius: 0px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.menu li a:hover::before {
+    width: 100%;
+}
+.Offcanvas span {
+    display: block;
+    height: 3px;
+    width: 28px;
+    background-color: #ffff00;
+    transition: 0.15s;
+}
+.Offcanvas .middle {
+    margin: 5px 0;
+}
+.Offcanvas:hover .middle {
+    margin: 7px 0;
+}
+.Offcanvas {
+    display: none;
+}
+.current .menu{
+    left: 0;
+}
+.current .Offcanvas .middle {
+    visibility: hidden;
+}
+.current .Offcanvas span:first-child {
+    transform: translateY(200%) rotate(135deg);
+}
+.current .Offcanvas span:last-child {
+    transform: translateY(-325%) rotate(-135deg);
+}
+.current .Offcanvas:hover .middle {
+    margin: 5px 0;
+}
