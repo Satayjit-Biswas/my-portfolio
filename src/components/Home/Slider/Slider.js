@@ -1,10 +1,17 @@
 import React from "react";
 import "./Slider.css";
+import bg from "../../../assets/img/bg1.jpg";
 import Typewriter from "typewriter-effect";
 
 const Slider = () => {
     return (
-        <div class="slider-area dark-slider-area" id="home">
+        <div
+            class="slider-area dark-slider-area"
+            style={{
+                backgroundImage: `url(${bg})`,
+            }}
+            id="home"
+        >
             <div class="container">
                 <div class="slider-text mt_50">
                     <h5>Hello I'm</h5>
@@ -25,7 +32,7 @@ const Slider = () => {
                         </span>
                     </div>
                     <a
-                        class="button"
+                        class="custom_btn"
                         target="_blank"
                         href="https://drive.google.com/file/d/14QKggrA5L74HLjJxyQMGmwcFaKvQHtET/view?fbclid=IwAR0-kC-Vww0ipmUtRbT0D2u1l1fd92mPS-YkirWHS2Tkctsz-bI_40vUsi8"
                     >

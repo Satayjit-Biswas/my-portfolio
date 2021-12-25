@@ -1,13 +1,31 @@
 import React from "react";
 import "./Header.css";
 import logo from "../../../assets/img/logo.png";
+
 const Header = () => {
+    // add sticky when you scrolling
+    window.onscroll = function () {
+        myFunction();
+    };
+    function myFunction() {
+        if (
+            document.body.scrollTop > 100 ||
+            document.documentElement.scrollTop > 100
+        ) {
+            document.querySelector(".header_area").classList.add("sticky");
+        } else {
+            document.querySelector(".header_area").classList.remove("sticky");
+        }
+    }
+    // Offcanvas toggle
     const current = () => {
         const addclass = document.querySelector(".header_area");
         addclass.classList.toggle("current");
+        const hidden = document.querySelector("body");
+        hidden.classList.toggle("overflow-hidden");
     };
     return (
-        <div className="header_area">
+        <header className="header_area">
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-md-3 col-5">
@@ -80,7 +98,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
     );
 };
 

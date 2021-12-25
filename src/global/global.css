@@ -53,7 +53,6 @@ h3 {
 }
 h4 {
     font-size: 3rem;
-    margin-bottom: 7rem;
 }
 p {
     font-family: "Heebo", sans-serif;
@@ -85,6 +84,7 @@ p {
     border: none;
     display: inline-block;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .custom_btn::before {
@@ -144,6 +144,23 @@ p {
 }
 .custom_btn:hover span {
     height: 100% !important;
+}
+.custom_btn.tag_bottom {
+    padding: 0px 12px;
+    font-size: 10px;
+    line-height: 24px;
+    margin: 2px;
+}
+
+.text_tb_line {
+    border-top: 3.5px solid #fff;
+    border-bottom: 3.5px solid #fff;
+}
+.section_top_gap {
+    padding-top: 10rem;
+}
+.section_bottom_gap {
+    padding-bottom: 7rem;
 }
 body {
     color: #d0d0d0;

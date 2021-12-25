@@ -1,0 +1,45 @@
+/* our services  */
+.our-services {
+    margin-bottom: 4rem;
+}
+
+.service-box {
+    padding: 60px 40px;
+    margin-bottom: 30px;
+    background-color: #111111;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.service-box i,
+.service-box h3 {
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+.service-box:hover {
+    -webkit-box-shadow: 0px 0px 0px 2px #525252;
+    box-shadow: 0px 0px 0px 2px #525252;
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01);
+}
+.service-box:hover i,
+.service-box:hover h3 {
+    color: #ffff00;
+}
+
+.service-box i {
+    font-size: 2.8rem;
+    font-weight: 200;
+    width: 75px;
+    height: 75px;
+    border: 1px solid #4c4c4cb5;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 75px;
+}
+.service-box h3 {
+    margin: 2.5rem 0 1.5rem 0;
+}

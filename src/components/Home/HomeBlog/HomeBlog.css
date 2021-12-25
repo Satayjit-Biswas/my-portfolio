@@ -1,0 +1,100 @@
+.blog-img {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blog-box {
+    background-color: #111111;
+}
+
+.blog-details {
+    padding: 15px 30px;
+    height: 280px;
+    overflow-y: auto;
+}
+.blog-details h3 a {
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.blog-details h3 a:hover {
+    color: #ffff00;
+}
+
+.blog-date {
+    font-size: 12px;
+    display: inline-block;
+}
+.blog-details .button {
+    padding: 4px 8px;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 1px;
+}
+
+.blog-details .arrow i {
+    font-size: 3rem;
+    margin-right: 25px;
+    color: #ffffff60;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.blog-details .arrow i:hover {
+    margin-right: 15px;
+    color: #ffff00;
+}
+
+.blog-box:hover .blog-img img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    opacity: 1;
+    -webkit-transform: scale(1.15) rotate(6deg);
+    -ms-transform: scale(1.15) rotate(6deg);
+    transform: scale(1.15) rotate(6deg);
+}
+.home_blog_area .owl-nav {
+    position: absolute;
+    top: -60px;
+    right: 0;
+    font-size: 18px;
+}
+.owl-theme .owl-nav [class*='owl-']:hover{
+    background: none;
+}
+.owl-prev,.owl-next {
+    position: relative;
+}
+.owl-prev:after {
+    content: "\f177";
+    font-family: "Font Awesome 5 pro";
+    font-size: 24px;
+    color: #ffff00;
+    font-weight: 200;
+    bottom: 0;
+    transition: .3s;
+}
+.owl-prev span,.owl-next span{
+    display: none;
+}
+.owl-next:after {
+    content: "\f178";
+    font-family: "Font Awesome 5 pro";
+    font-size: 24px;
+    color: #ffff00;
+    font-weight: 200;
+    bottom: 0;
+    transition: .3s;
+}
+
+.owl-prev:hover:after ,.owl-next:hover:after {
+    color: #c2b508;
+}

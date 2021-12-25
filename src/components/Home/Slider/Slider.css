@@ -50,12 +50,10 @@
 .slider-area .button:hover {
     box-shadow: 0 0 4px 1px #ffff00;
 }
-.typewrite {
-    font-size: 2.2rem;
-    color: #ffff00;
-    font-weight: 600;
-    letter-spacing: 1.2px;
-}
-.typewrite:hover {
-    color: #ffff00;
+.Typewriter {
+    display: inline-block;
+    color: #FFF000;
+    font-size: 22px;
+    margin-left: 5px;
+    margin-bottom: 20px;
 }

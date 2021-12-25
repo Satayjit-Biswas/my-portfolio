@@ -3,10 +3,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    transition: .3s;
+}
+/*sticky START CSS*/
+header.sticky {
+    -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.sticky {
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.847);
+    -webkit-box-shadow: 0px 2px 10px -8px #ffffff !important;
+    box-shadow: 0px 2px 10px -8px #ffffff !important;
+    z-index: 99;
 }
 .logo a img {
     max-width: 260px;
-  }
+}
 .menu {
     text-align: right;
 }
@@ -60,7 +78,7 @@
 .Offcanvas {
     display: none;
 }
-.current .menu{
+.current .menu {
     left: 0;
 }
 .current .Offcanvas .middle {
