@@ -4,6 +4,7 @@ import Header from "../../Share/Header/Header";
 import Counter from "../Counter/Counter";
 import HomeAbout from "../HomeAbout/HomeAbout";
 import HomeBlog from "../HomeBlog/HomeBlog";
+import HomeContact from "../HomeContact/HomeContact";
 import OurService from "../OurService/OurService";
 import Slider from "../Slider/Slider";
 import Testimonial from "../Testimonial/Testimonial";
@@ -18,6 +19,7 @@ const Home = () => {
             <Counter></Counter>
             <HomeBlog></HomeBlog>
             <Testimonial></Testimonial>
+            <HomeContact></HomeContact>
             <Footer></Footer>
         </div>
     );

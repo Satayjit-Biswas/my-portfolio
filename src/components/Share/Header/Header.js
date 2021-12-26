@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import logo from "../../../assets/img/logo.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     // add sticky when you scrolling
@@ -21,73 +22,71 @@ const Header = () => {
     const current = () => {
         const addclass = document.querySelector(".header_area");
         addclass.classList.toggle("current");
-        const hidden = document.querySelector("body");
-        hidden.classList.toggle("overflow-hidden");
     };
     return (
         <header className="header_area">
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-md-3 col-5">
-                        <a href="#">
+                        <Link to="#">
                             <img src={logo} class="img-fluid logo" alt="" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="col-md-9 col-7 position-relative">
                         <ul className="menu">
                             <li className="nav-item">
-                                <a
-                                    href="#"
+                                <Link
+                                    to="/"
                                     class="nav-link"
                                     onClick={() => current()}
                                 >
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a
-                                    href="#"
+                                <Link
+                                    to="/aboutPage"
                                     class="nav-link"
                                     onClick={() => current()}
                                 >
                                     About
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a
-                                    href="#"
+                                <Link
+                                    to="/servicePage"
                                     class="nav-link"
                                     onClick={() => current()}
                                 >
                                     Service
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a
-                                    href="#"
+                                <Link
+                                    to="/projectPage"
                                     class="nav-link"
                                     onClick={() => current()}
                                 >
                                     My project
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a
-                                    href="#"
+                                <Link
+                                    to="/contactPage"
                                     class="nav-link"
                                     onClick={() => current()}
                                 >
                                     Contact
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a
-                                    href="#"
+                                <Link
+                                    to="/loginPage"
                                     class="nav-link"
                                     onClick={() => current()}
                                 >
                                     login
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                         <div className="Offcanvas" onClick={() => current()}>

@@ -1,0 +1,51 @@
+.testimonial_area{
+    padding: 0 20%;
+}
+
+.client-img {
+    position: relative;
+}
+.client-img img {
+    width: 90px !important;
+    height: 90px;
+    border-radius: 50px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    top: -105px;
+    left: 50%;
+    right: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.testimonial_area .client-review-box {
+    background-color: #111111;
+    padding: 6rem 8rem;
+    margin-top: 5rem;
+}
+
+.client-name {
+    font-size: 1.8rem;
+    padding: 10px 0 5px 0;
+}
+.css-1vooibu-MuiSvgIcon-root {
+    width: 20px !important;
+    height: 20px !important;
+    color: #ffff00;
+}
+.testimonial_area .owl-dots{
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.owl-theme .owl-dots .owl-dot span {
+    background: #524d05;
+    transition: .3s;
+    width: 9px;
+    height: 9px;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #ffff00;
+}

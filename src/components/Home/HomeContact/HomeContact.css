@@ -1,0 +1,25 @@
+.home_contact_area .contact {
+    background-color: #111111;
+    padding: 10rem;
+}
+
+.home_contact_area .inputbox {
+    width: 100%;
+    background-color: black;
+    border: 2px solid #000;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    margin-bottom: 30px;
+    padding: 1.2rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.home_contact_area .inputbox:hover {
+    border: 2px solid #ffff00;
+}
+
+textarea {
+    min-height: 200px;
+}

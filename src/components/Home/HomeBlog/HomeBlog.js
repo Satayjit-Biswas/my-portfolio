@@ -34,6 +34,7 @@ const HomeBlog = () => {
                     dots={false}
                     margin={15}
                     responsive={state.responsive}
+                    smartSpeed={1000}
                     nav
                 >
                     <div class="item">
