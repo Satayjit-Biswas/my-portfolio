@@ -28,7 +28,7 @@ const Header = () => {
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-md-3 col-5">
-                        <Link to="#">
+                        <Link to="/">
                             <img src={logo} class="img-fluid logo" alt="" />
                         </Link>
                     </div>
@@ -45,7 +45,7 @@ const Header = () => {
                             </li>
                             <li className="nav-item">
                                 <Link
-                                    to="/aboutPage"
+                                    to="/aboutpage"
                                     class="nav-link"
                                     onClick={() => current()}
                                 >
@@ -54,7 +54,7 @@ const Header = () => {
                             </li>
                             <li className="nav-item">
                                 <Link
-                                    to="/servicePage"
+                                    to="/servicepage"
                                     class="nav-link"
                                     onClick={() => current()}
                                 >
@@ -63,7 +63,7 @@ const Header = () => {
                             </li>
                             <li className="nav-item">
                                 <Link
-                                    to="/projectPage"
+                                    to="/projectpage"
                                     class="nav-link"
                                     onClick={() => current()}
                                 >
@@ -72,7 +72,16 @@ const Header = () => {
                             </li>
                             <li className="nav-item">
                                 <Link
-                                    to="/contactPage"
+                                    to="/blogpage"
+                                    class="nav-link"
+                                    onClick={() => current()}
+                                >
+                                    Blog
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link
+                                    to="/contactpage"
                                     class="nav-link"
                                     onClick={() => current()}
                                 >
@@ -81,7 +90,7 @@ const Header = () => {
                             </li>
                             <li className="nav-item">
                                 <Link
-                                    to="/loginPage"
+                                    to="/loginpage"
                                     class="nav-link"
                                     onClick={() => current()}
                                 >

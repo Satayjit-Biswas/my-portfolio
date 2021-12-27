@@ -151,16 +151,19 @@ p {
     line-height: 24px;
     margin: 2px;
 }
-
+.sticky_top_gap{
+    padding-top: 80px;
+}
 .text_tb_line {
     border-top: 3.5px solid #fff;
     border-bottom: 3.5px solid #fff;
+    text-transform: capitalize;
 }
 .section_top_gap {
-    padding-top: 10rem;
+    margin-top: 10rem;
 }
 .section_bottom_gap {
-    padding-bottom: 7rem;
+    margin-bottom: 7rem;
 }
 body {
     color: #d0d0d0;

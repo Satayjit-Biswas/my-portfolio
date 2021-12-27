@@ -1,15 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./LoginPage.css";
+import "./ForgetPage.css";
 
-const LoginPage = () => {
+const ForgetPage = () => {
     return (
-        <div className="login_area sticky_top_gap">
+        <div className="forget_area sticky_top_gap">
             <div className="container">
                 <div class="contact">
                     <div class="contact-text section_bottom_gap">
                         <h4 class="text-center ">
-                            <span className="text_tb_line">Log In</span>
+                            <span className="text_tb_line">
+                                Forget Password
+                            </span>
                         </h4>
                     </div>
                     <form>
@@ -22,15 +24,6 @@ const LoginPage = () => {
                                     required
                                 />
                             </div>
-                            <div class="col-lg-8 col-md-9 col-12">
-                                <input
-                                    type="password"
-                                    name=""
-                                    id=""
-                                    placeholder="Password"
-                                    class="inputbox"
-                                />
-                            </div>
                             <div class="col-12 text-center">
                                 <p id="my-form-status"></p>
                                 <button
@@ -40,17 +33,9 @@ const LoginPage = () => {
                                     id="my-form"
                                     className="custom_btn"
                                 >
-                                    <span class="left_border"></span> Log in{" "}
+                                    <span class="left_border"></span> Continue
                                     <span class="right_border"></span>
                                 </button>
-                                <p id="my-form-status" className="mt_30">
-                                    <Link to="/forgetpage" className="mr_10">
-                                        Forgotten Password ?
-                                    </Link>
-                                    <Link to="/registerpage">
-                                        Create New Account
-                                    </Link>
-                                </p>
                             </div>
                         </div>
                     </form>
@@ -60,4 +45,4 @@ const LoginPage = () => {
     );
 };
 
-export default LoginPage;
+export default ForgetPage;

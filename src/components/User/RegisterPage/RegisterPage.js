@@ -1,19 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./LoginPage.css";
+import "./RegisterPage.css";
 
-const LoginPage = () => {
+const RegisterPage = () => {
     return (
-        <div className="login_area sticky_top_gap">
+        <div className="register_area sticky_top_gap">
             <div className="container">
                 <div class="contact">
                     <div class="contact-text section_bottom_gap">
                         <h4 class="text-center ">
-                            <span className="text_tb_line">Log In</span>
+                            <span className="text_tb_line">Create Account</span>
                         </h4>
                     </div>
                     <form>
                         <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-8 col-md-9 col-12">
+                                <input
+                                    type="text"
+                                    placeholder="Name"
+                                    class="inputbox"
+                                    required
+                                />
+                            </div>
                             <div class="col-lg-8 col-md-9 col-12">
                                 <input
                                     type="email"
@@ -29,6 +37,7 @@ const LoginPage = () => {
                                     id=""
                                     placeholder="Password"
                                     class="inputbox"
+                                    required
                                 />
                             </div>
                             <div class="col-12 text-center">
@@ -40,15 +49,14 @@ const LoginPage = () => {
                                     id="my-form"
                                     className="custom_btn"
                                 >
-                                    <span class="left_border"></span> Log in{" "}
+                                    <span class="left_border"></span> Create
+                                    Account
                                     <span class="right_border"></span>
                                 </button>
                                 <p id="my-form-status" className="mt_30">
-                                    <Link to="/forgetpage" className="mr_10">
-                                        Forgotten Password ?
-                                    </Link>
-                                    <Link to="/registerpage">
-                                        Create New Account
+                                    Already have an account?
+                                    <Link to="/loginpage" className="ml_10">
+                                        ( login )
                                     </Link>
                                 </p>
                             </div>
@@ -60,4 +68,4 @@ const LoginPage = () => {
     );
 };
 
-export default LoginPage;
+export default RegisterPage;

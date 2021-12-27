@@ -1,9 +1,9 @@
-.login_area .contact {
+.register_area .contact {
     background-color: #111111;
     padding: 10rem;
 }
 
-.login_area .inputbox {
+.register_area .inputbox {
     width: 100%;
     background-color: black;
     border: 2px solid #000;
@@ -16,18 +16,18 @@
     font-size: 1.5rem;
 }
 
-.login_area .inputbox:hover {
+.register_area .inputbox:hover {
     border: 2px solid #ffff00;
 }
 
 textarea {
     min-height: 200px;
 }
-.login_area p a{
+.register_area p a{
     color: #a2a0a0 !important;
     text-decoration: none;
     transition: .3s;
 }
-.login_area p a:hover{
+.register_area p a:hover{
     color: #ffff00 !important;
 }
