@@ -6,17 +6,28 @@ import ServicePage from "./components/ServicePage/ServicePage";
 import ProjectPage from "./components/ProjectPage/ProjectPage";
 import ContactPage from "./components/ContactPage/ContactPage";
 import LoginPage from "./components/User/LoginPage/LoginPage";
+import Header from "./components/Share/Header/Header";
+import Footer from "./components/Share/Footer/Footer";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
+import RegisterPage from "./components/User/RegisterPage/RegisterPage";
+import ForgetPage from "./components/User/ForgetPage/ForgetPage";
 const App = () => {
     return (
         <div>
+            <Header></Header>
             <Routes>
                 <Route path="/" element={<Home />}></Route>
-                <Route path="aboutPage" element={<AboutPage />}></Route>
-                <Route path="servicePage" element={<ServicePage />}></Route>
-                <Route path="projectPage" element={<ProjectPage />}></Route>
-                <Route path="contactPage" element={<ContactPage />}></Route>
-                <Route path="loginPage" element={<LoginPage />}></Route>
+                <Route path="aboutpage" element={<AboutPage />}></Route>
+                <Route path="servicepage" element={<ServicePage />}></Route>
+                <Route path="projectpage" element={<ProjectPage />}></Route>
+                <Route path="contactpage" element={<ContactPage />}></Route>
+                <Route path="loginpage" element={<LoginPage />}></Route>
+
+                <Route path="registerpage" element={<RegisterPage />}></Route>
+                <Route path="forgetpage" element={<ForgetPage />}></Route>
+                <Route path="*" element={<ErrorPage />}></Route>
             </Routes>
+            <Footer></Footer>
         </div>
     );
 };
