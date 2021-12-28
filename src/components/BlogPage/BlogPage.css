@@ -1,0 +1,8 @@
+/* .blog_area_box{
+    background-color: #111111;
+    padding: 40px 20px;
+} */
+.blog_right_site{
+    position: sticky;
+    top: 100px;
+}
