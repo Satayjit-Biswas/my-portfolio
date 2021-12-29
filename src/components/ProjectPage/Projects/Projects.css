@@ -1,0 +1,12 @@
+.text_tb_line{
+    font-size: 18px;
+}
+.projects_area_box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.project_item{
+    background-color: red;
+    height: 50px;
+}

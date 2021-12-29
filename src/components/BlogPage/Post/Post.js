@@ -3,8 +3,8 @@ import img from "../../../assets/img/img_5.jpg";
 import "./Post.css";
 const Post = () => {
     return (
-        <div className="post_area">
-            <h4 class="text-center mb_30">
+        <div className="post_area ">
+            <h4 class="text-center mb_30 mt_20">
                 <span className="text_tb_line">All post</span>
             </h4>
             <div className="post_area_box">

@@ -12,6 +12,7 @@ import ErrorPage from "./components/ErrorPage/ErrorPage";
 import RegisterPage from "./components/User/RegisterPage/RegisterPage";
 import ForgetPage from "./components/User/ForgetPage/ForgetPage";
 import BlogPage from "./components/BlogPage/BlogPage";
+import PostDetails from "./components/BlogPage/PostDetails/PostDetails";
 const App = () => {
     return (
         <div>
@@ -22,6 +23,7 @@ const App = () => {
                 <Route path="servicepage" element={<ServicePage />}></Route>
                 <Route path="projectpage" element={<ProjectPage />}></Route>
                 <Route path="blogpage" element={<BlogPage />}></Route>
+                <Route path="postdetails" element={<PostDetails />}></Route>
                 <Route path="contactpage" element={<ContactPage />}></Route>
                 <Route path="loginpage" element={<LoginPage />}></Route>
                 <Route path="registerpage" element={<RegisterPage />}></Route>

@@ -30,6 +30,7 @@
     margin-bottom: 30px;
     padding-bottom: 10px;
     border-bottom: 2px solid rgb(95, 95, 95);
+    text-transform: uppercase;
 }
 .recentpost_date{
     font-size: 10px;

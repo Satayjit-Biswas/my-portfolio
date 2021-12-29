@@ -1,10 +1,10 @@
 import React from "react";
-import "./Categories.css";
-const Categories = () => {
+
+const ProjectCategories = () => {
     return (
-        <div className="categories_area ">
+        <div className="project_categories_area ">
             <div className="right_text">
-                <h3>CATEGORIES</h3>
+                <h3>Project CATEGORIES</h3>
             </div>
             <div className="row">
                 <div className="col-6">
@@ -33,4 +33,4 @@ const Categories = () => {
     );
 };
 
-export default Categories;
+export default ProjectCategories;

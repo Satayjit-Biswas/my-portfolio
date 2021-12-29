@@ -1,12 +1,12 @@
-.categorie_link {
+.categories_link {
     display: flex;
     align-items: center;
     border-bottom: 1.5px solid rgba(196, 194, 194, 0.26);;
 }
-.categorie_link i{
+.categories_link i{
     font-size: 16px;
 }
-.categorie_link a {
+.categories_link a {
     color: rgb(196, 194, 194);
     text-decoration: none;
     font-size: 16px;
@@ -14,7 +14,8 @@
     transition: 0.3s;
     margin-left: 10px;
     text-transform: capitalize;
+    padding: 5px 0;
 }
-.categorie_link a:hover {
+.categories_link a:hover {
     color: #fff000;
 }

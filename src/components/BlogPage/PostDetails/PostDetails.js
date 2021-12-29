@@ -1,18 +1,16 @@
 import React from "react";
-import Post from "./Post/Post";
-import "./BlogPage.css";
-import RecentPost from "./RecentPost/RecentPost";
-import Categories from "./Categories/Categories";
+import Categories from "../Categories/Categories";
+import RecentPost from "../RecentPost/RecentPost";
 
-const BlogPage = () => {
+const PostDetails = () => {
     return (
-        <div className="blog_area sticky_top_gap">
+        <div className="post_details sticky_top_gap">
             <div className="container">
                 <div className="blog_area_box">
                     <div className="row">
                         <div className="col-lg-8">
                             <div className="ads728_90"></div>
-                            <Post></Post>
+                            <h2>Coming........</h2>
                             <div className="ads728_90"></div>
                         </div>
                         <div className="col-lg-4">
@@ -30,4 +28,4 @@ const BlogPage = () => {
     );
 };
 
-export default BlogPage;
+export default PostDetails;
