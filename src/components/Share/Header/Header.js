@@ -45,15 +45,6 @@ const Header = () => {
                             </li>
                             <li className="nav-item">
                                 <Link
-                                    to="/aboutpage"
-                                    class="nav-link"
-                                    onClick={() => current()}
-                                >
-                                    About
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link
                                     to="/servicepage"
                                     class="nav-link"
                                     onClick={() => current()}

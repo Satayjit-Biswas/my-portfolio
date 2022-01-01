@@ -6,6 +6,10 @@
     background-color: #111111;
     padding: 10px;
     margin-bottom: 20px;
+    transition: .3s;
+}
+.post_area_box:hover{
+    transform: scale(1.02);
 }
 .post_img img {
     width: 100%;
@@ -35,7 +39,7 @@
     color: rgb(102, 101, 101);
 }
 .post_read_more .custom_btn {
-    padding: 4px 20px;
+    padding: 6px 20px;
     font-size: 12px;
 }
 .post_icon {
