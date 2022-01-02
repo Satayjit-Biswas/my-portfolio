@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Header.css";
 import logo from "../../../assets/img/logo.png";
 import { Link } from "react-router-dom";
-
+import img from "../../../assets/img/Man-Icon.png";
+import $ from "jquery";
 const Header = () => {
     // add sticky when you scrolling
     window.onscroll = function () {
@@ -23,6 +24,18 @@ const Header = () => {
         const addclass = document.querySelector(".header_area");
         addclass.classList.toggle("current");
     };
+    useEffect(() => {
+        const login_icon = document.querySelector(".login_icon");
+        login_icon.addEventListener("click", () => {
+            const login_icon_menu = document.querySelector(".login_menu");
+            login_icon_menu.classList.toggle("d-none");
+        });
+        $(document).mouseup(function (e) {
+            if ($(e.target).closest(".login_menu,.login_icon").length === 0) {
+                $(".login_menu").addClass("d-none");
+            }
+        });
+    }, []);
     return (
         <header className="header_area">
             <div className="container">
@@ -87,6 +100,31 @@ const Header = () => {
                                 >
                                     login
                                 </Link>
+                            </li>
+                            <li className="nav-item">
+                                <div className="login_icon">
+                                    <img src={img} alt="" />
+                                    <ul className="login_menu d-none">
+                                        <li className="nav-item">
+                                            <Link
+                                                to="/loginpage"
+                                                class="nav-link"
+                                                onClick={() => current()}
+                                            >
+                                                Profile
+                                            </Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <Link
+                                                to="/loginpage"
+                                                class="nav-link"
+                                                onClick={() => current()}
+                                            >
+                                                logout
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                         </ul>
                         <div className="Offcanvas" onClick={() => current()}>

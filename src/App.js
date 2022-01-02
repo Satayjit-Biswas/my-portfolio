@@ -13,6 +13,7 @@ import ForgetPage from "./components/User/ForgetPage/ForgetPage";
 import BlogPage from "./components/BlogPage/BlogPage";
 import PostDetails from "./components/BlogPage/PostDetails/PostDetails";
 import ProjectDetails from "./components/ProjectPage/ProjectDetails/ProjectDetails";
+import Dashboard from "./components/Admin/Dashboard";
 const App = () => {
     return (
         <div>
@@ -31,6 +32,7 @@ const App = () => {
                 <Route path="loginpage" element={<LoginPage />}></Route>
                 <Route path="registerpage" element={<RegisterPage />}></Route>
                 <Route path="forgetpage" element={<ForgetPage />}></Route>
+                <Route path="admin" element={<Dashboard />}></Route>
                 <Route path="*" element={<ErrorPage />}></Route>
             </Routes>
             <Footer></Footer>

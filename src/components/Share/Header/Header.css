@@ -93,3 +93,54 @@ header.sticky {
 .current .Offcanvas:hover .middle {
     margin: 5px 0;
 }
+.login_icon {
+    margin-left: 20px;
+    position: relative;
+}
+.login_icon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffff00;
+    padding: 2px;
+    object-fit: cover;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    transition: .2s;
+}
+.login_icon img:hover{
+    box-shadow: 0 0 10px 1px #ffff00;
+}
+.login_menu{
+    position: absolute;
+    width: 150px;
+    background-color: #252525;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -80px;
+}
+.login_menu li{
+    display: block;
+    text-align: center;
+    margin: 0;
+}
+.login_menu li a{
+    margin: 0;
+    display: block;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: .3s;
+    border-bottom: 1px solid #444444;
+}
+.login_menu li a:hover{
+    position: static;
+    color: #ffff00;
+    background-color: #444444;
+    display: block;
+}
+.login_menu li a:hover::before{
+    display: none;
+}
+.nav-link:focus, .nav-link:hover {
+    color: #ffff00;
+}
