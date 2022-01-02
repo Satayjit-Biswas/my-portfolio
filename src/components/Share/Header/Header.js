@@ -107,7 +107,7 @@ const Header = () => {
                                     <ul className="login_menu d-none">
                                         <li className="nav-item">
                                             <Link
-                                                to="/loginpage"
+                                                to="/profile"
                                                 class="nav-link"
                                                 onClick={() => current()}
                                             >

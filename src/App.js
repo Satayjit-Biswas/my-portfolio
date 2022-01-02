@@ -14,6 +14,7 @@ import BlogPage from "./components/BlogPage/BlogPage";
 import PostDetails from "./components/BlogPage/PostDetails/PostDetails";
 import ProjectDetails from "./components/ProjectPage/ProjectDetails/ProjectDetails";
 import Dashboard from "./components/Admin/Dashboard";
+import Profile from "./components/User/Profile/Profile";
 const App = () => {
     return (
         <div>
@@ -33,6 +34,7 @@ const App = () => {
                 <Route path="registerpage" element={<RegisterPage />}></Route>
                 <Route path="forgetpage" element={<ForgetPage />}></Route>
                 <Route path="admin" element={<Dashboard />}></Route>
+                <Route path="profile" element={<Profile />}></Route>
                 <Route path="*" element={<ErrorPage />}></Route>
             </Routes>
             <Footer></Footer>

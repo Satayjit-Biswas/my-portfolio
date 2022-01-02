@@ -1,0 +1,28 @@
+.profile_box{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile_sub_box{
+    background-color: #111111;
+    padding: 10% 7%;
+    text-align: center;
+}
+.profile_sub_box_img img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fff000;
+    padding: 5px;
+    object-fit: cover;
+}
+.user_name, .user_role , .user_gmail{
+    display: flex;
+    text-transform: capitalize;
+    margin-top: 15px;
+}
+.user_name h5 , .user_role h5 ,.user_gmail h5{
+    font-size: 20px;
+    margin-right: 10px;
+}
