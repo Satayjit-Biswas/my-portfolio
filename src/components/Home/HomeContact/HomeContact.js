@@ -5,49 +5,50 @@ const HomeContact = () => {
     return (
         <div className="home_contact_area section_top_gap">
             <div className="container">
-                <div class="contact">
-                    <div class="contact-text section_bottom_gap">
-                        <h4 class="text-center ">
+                <div className="contact">
+                    <div className="contact-text section_bottom_gap">
+                        <h4 className="text-center ">
                             <span className="text_tb_line">Contact me</span>
                         </h4>
                     </div>
                     <form>
-                        <div class="row">
-                            <div class="col-md-6">
+                        <div className="row">
+                            <div className="col-md-6">
                                 <input
                                     name="name :"
                                     type="text"
                                     placeholder="Your Name"
-                                    class="inputbox"
+                                    className="inputbox"
                                     required
                                 />
                             </div>
-                            <div class="col-md-6">
+                            <div className="col-md-6">
                                 <input
                                     type="email"
                                     placeholder="Email"
-                                    class="inputbox"
+                                    className="inputbox"
                                     required
                                 />
                             </div>
-                            <div class="col-12">
+                            <div className="col-12">
                                 <textarea
                                     name="Message :"
-                                    class="inputbox"
+                                    className="inputbox"
                                     placeholder="Message"
                                 ></textarea>
                             </div>
-                            <div class="col-12 text-center">
+                            <div className="col-12 text-center">
                                 <p id="my-form-status"></p>
                                 <button
                                     type="submit"
-                                    class="button mt-3"
+                                    className="button mt-3"
                                     value="Submit"
                                     id="my-form"
                                     className="custom_btn"
                                 >
-                                    <span class="left_border"></span> Send
-                                    Message <span class="right_border"></span>
+                                    <span className="left_border"></span> Send
+                                    Message{" "}
+                                    <span className="right_border"></span>
                                 </button>
                             </div>
                         </div>

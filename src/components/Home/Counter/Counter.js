@@ -7,17 +7,17 @@ import CountUp from "react-countup";
 const Counter = () => {
     return (
         <div
-            class="counter-area"
+            className="counter-area"
             style={{
                 backgroundImage: `url(${bg})`,
             }}
         >
-            <div class="counter">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 col-6">
-                            <div class="counter-box text-center">
-                                <i class="fal fa-user"></i>
+            <div className="counter">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-3 col-6">
+                            <div className="counter-box text-center">
+                                <i className="fal fa-user"></i>
                                 <VisibilitySensor
                                     partialVisibility
                                     offset={{ bottom: 200 }}
@@ -37,9 +37,9 @@ const Counter = () => {
                                 <h3>Happy Clients</h3>
                             </div>
                         </div>
-                        <div class="col-md-3 col-6">
-                            <div class="counter-box text-center">
-                                <i class="fal fa-handshake"></i>
+                        <div className="col-md-3 col-6">
+                            <div className="counter-box text-center">
+                                <i className="fal fa-handshake"></i>
                                 <VisibilitySensor
                                     partialVisibility
                                     offset={{ bottom: 200 }}
@@ -59,9 +59,9 @@ const Counter = () => {
                                 <h3>Project Done</h3>
                             </div>
                         </div>
-                        <div class="col-md-3 col-6">
-                            <div class="counter-box text-center">
-                                <i class="fal fa-comment-alt-smile"></i>
+                        <div className="col-md-3 col-6">
+                            <div className="counter-box text-center">
+                                <i className="fal fa-comment-alt-smile"></i>
                                 <VisibilitySensor
                                     partialVisibility
                                     offset={{ bottom: 200 }}
@@ -81,9 +81,9 @@ const Counter = () => {
                                 <h3>Total Review</h3>
                             </div>
                         </div>
-                        <div class="col-md-3 col-6">
-                            <div class="counter-box text-center">
-                                <i class="fal fa-history"></i>
+                        <div className="col-md-3 col-6">
+                            <div className="counter-box text-center">
+                                <i className="fal fa-history"></i>
                                 <VisibilitySensor
                                     partialVisibility
                                     offset={{ bottom: 200 }}

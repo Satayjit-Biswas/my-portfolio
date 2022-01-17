@@ -4,7 +4,7 @@ import img from "../../../assets/img/img_5.jpg";
 const Projects = () => {
     return (
         <div className="projects_area">
-            <h4 class="text-center mb_30 mt_20">
+            <h4 className="text-center mb_30 mt_20">
                 <span className="text_tb_line">All project</span>
             </h4>
             <div className="projects_area_box mb_20">
@@ -23,7 +23,7 @@ const Projects = () => {
                                 End Date :<span> 30/10/2021</span>
                             </p>
                         </div>
-                        <h3 class="mt_15 mb_15">
+                        <h3 className="mt_15 mb_15">
                             <a href="#">Bike Store e-commerce Website .</a>
                         </h3>
                         <p>
@@ -34,9 +34,9 @@ const Projects = () => {
                         </p>
                         <div className="post_read_more mt_20 mb_10">
                             <a href="#" className="custom_btn">
-                                <span class="left_border"></span>
+                                <span className="left_border"></span>
                                 details
-                                <span class="right_border"></span>
+                                <span className="right_border"></span>
                             </a>
                         </div>
                     </div>
@@ -56,7 +56,7 @@ const Projects = () => {
                                 End Date :<span> 30/10/2021</span>
                             </p>
                         </div>
-                        <h3 class="mt_15 mb_15">
+                        <h3 className="mt_15 mb_15">
                             <a href="#">Bike Store e-commerce Website .</a>
                         </h3>
                         <p>
@@ -67,9 +67,9 @@ const Projects = () => {
                         </p>
                         <div className="post_read_more mt_20 mb_10">
                             <a href="#" className="custom_btn">
-                                <span class="left_border"></span>
+                                <span className="left_border"></span>
                                 details
-                                <span class="right_border"></span>
+                                <span className="right_border"></span>
                             </a>
                         </div>
                     </div>
@@ -89,7 +89,7 @@ const Projects = () => {
                                 End Date :<span> 30/10/2021</span>
                             </p>
                         </div>
-                        <h3 class="mt_15 mb_15">
+                        <h3 className="mt_15 mb_15">
                             <a href="#">Bike Store e-commerce Website .</a>
                         </h3>
                         <p>
@@ -100,9 +100,9 @@ const Projects = () => {
                         </p>
                         <div className="post_read_more mt_20 mb_10">
                             <a href="#" className="custom_btn">
-                                <span class="left_border"></span>
+                                <span className="left_border"></span>
                                 details
-                                <span class="right_border"></span>
+                                <span className="right_border"></span>
                             </a>
                         </div>
                     </div>

@@ -17,13 +17,13 @@ const ServicePage = () => {
             <OurService></OurService>
             <div className="container">
                 <div className="Question">
-                    <h4 class="text-center section_bottom_gap">
+                    <h4 className="text-center section_bottom_gap">
                         <span className="text_tb_line">Some Question</span>
                     </h4>
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
+                    <div className="accordion" id="accordionExample">
+                        <div className="accordion-item">
                             <button
-                                class="accordion-button collapsed"
+                                className="accordion-button collapsed"
                                 type="button"
                                 data-bs-toggle="collapse"
                                 data-bs-target="#collapse1"
@@ -34,11 +34,11 @@ const ServicePage = () => {
                             </button>
                             <div
                                 id="collapse1"
-                                class="accordion-collapse collapse"
+                                className="accordion-collapse collapse"
                                 aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample"
                             >
-                                <div class="accordion-body">
+                                <div className="accordion-body">
                                     <strong>
                                         This is the third item's accordion body.
                                     </strong>{" "}
@@ -56,9 +56,9 @@ const ServicePage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
+                        <div className="accordion-item">
                             <button
-                                class="accordion-button collapsed"
+                                className="accordion-button collapsed"
                                 type="button"
                                 data-bs-toggle="collapse"
                                 data-bs-target="#collapse2"
@@ -68,11 +68,11 @@ const ServicePage = () => {
                             </button>
                             <div
                                 id="collapse2"
-                                class="accordion-collapse collapse"
+                                className="accordion-collapse collapse"
                                 aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample"
                             >
-                                <div class="accordion-body">
+                                <div className="accordion-body">
                                     <strong>
                                         This is the third item's accordion body.
                                     </strong>{" "}
@@ -90,9 +90,9 @@ const ServicePage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
+                        <div className="accordion-item">
                             <button
-                                class="accordion-button collapsed"
+                                className="accordion-button collapsed"
                                 type="button"
                                 data-bs-toggle="collapse"
                                 data-bs-target="#collapseThree"
@@ -103,11 +103,11 @@ const ServicePage = () => {
                             </button>
                             <div
                                 id="collapseThree"
-                                class="accordion-collapse collapse"
+                                className="accordion-collapse collapse"
                                 aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample"
                             >
-                                <div class="accordion-body">
+                                <div className="accordion-body">
                                     <strong>
                                         This is the third item's accordion body.
                                     </strong>{" "}

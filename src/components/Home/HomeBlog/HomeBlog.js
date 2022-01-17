@@ -24,9 +24,9 @@ const HomeBlog = () => {
     return (
         <div className="home_blog_area section_top_gap position-relation">
             <div className="container">
-                <div class="service-text">
-                    <h4 class="text-center section_bottom_gap">
-                        <span class="text_tb_line">Our Blog</span>
+                <div className="service-text">
+                    <h4 className="text-center section_bottom_gap">
+                        <span className="text_tb_line">Our Blog</span>
                     </h4>
                 </div>
                 <OwlCarousel
@@ -37,52 +37,52 @@ const HomeBlog = () => {
                     smartSpeed={1000}
                     nav
                 >
-                    <div class="item">
-                        <div class="blog-box">
+                    <div className="item">
+                        <div className="blog-box">
                             <div
-                                class="blog-img"
+                                className="blog-img"
                                 style={{
                                     backgroundImage: `url(${img})`,
                                 }}
                             ></div>
-                            <div class="blog-details">
-                                <span class="blog-date mr_5">
+                            <div className="blog-details">
+                                <span className="blog-date mr_5">
                                     25/12/21 by Admin
                                 </span>
                                 <div className="d-flex a">
-                                    <span class="blog-date mr_10">
+                                    <span className="blog-date mr_10">
                                         Category :
                                     </span>
                                     <div className="tag">
                                         <a
                                             href="#"
-                                            class="custom_btn tag_bottom"
+                                            className="custom_btn tag_bottom"
                                         >
-                                            <span class="left_border"></span>
+                                            <span className="left_border"></span>
                                             html
-                                            <span class="right_border"></span>
+                                            <span className="right_border"></span>
                                         </a>
                                         <a
                                             href="#"
-                                            class="custom_btn tag_bottom"
+                                            className="custom_btn tag_bottom"
                                         >
-                                            <span class="left_border"></span>
+                                            <span className="left_border"></span>
                                             React js
-                                            <span class="right_border"></span>
+                                            <span className="right_border"></span>
                                         </a>
                                         <a
                                             href="#"
-                                            class="custom_btn tag_bottom"
+                                            className="custom_btn tag_bottom"
                                         >
-                                            <span class="left_border"></span>
+                                            <span className="left_border"></span>
                                             html
-                                            <span class="right_border"></span>
+                                            <span className="right_border"></span>
                                         </a>
                                     </div>
                                 </div>
 
-                                <div class="blog-title">
-                                    <h3 class="mt_15 mb_15">
+                                <div className="blog-title">
+                                    <h3 className="mt_15 mb_15">
                                         <a href="#">
                                             Bike Store e-commerce Website .
                                         </a>
@@ -92,61 +92,61 @@ const HomeBlog = () => {
                                         printing and typesetting industry. Lorem
                                         Ipsum has been the industry's ....
                                     </p>
-                                    <div class="arrow mt_5 text-end">
+                                    <div className="arrow mt_5 text-end">
                                         <a href="#">
-                                            <i class="fal fa-long-arrow-right"></i>
+                                            <i className="fal fa-long-arrow-right"></i>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="blog-box">
+                    <div className="item">
+                        <div className="blog-box">
                             <div
-                                class="blog-img"
+                                className="blog-img"
                                 style={{
                                     backgroundImage: `url(${img})`,
                                 }}
                             ></div>
-                            <div class="blog-details">
-                                <span class="blog-date mr_5">
+                            <div className="blog-details">
+                                <span className="blog-date mr_5">
                                     25/12/21 by Admin
                                 </span>
                                 <div className="d-flex a">
-                                    <span class="blog-date mr_10">
+                                    <span className="blog-date mr_10">
                                         Category :
                                     </span>
                                     <div className="tag">
                                         <a
                                             href="#"
-                                            class="custom_btn tag_bottom"
+                                            className="custom_btn tag_bottom"
                                         >
-                                            <span class="left_border"></span>
+                                            <span className="left_border"></span>
                                             html
-                                            <span class="right_border"></span>
+                                            <span className="right_border"></span>
                                         </a>
                                         <a
                                             href="#"
-                                            class="custom_btn tag_bottom"
+                                            className="custom_btn tag_bottom"
                                         >
-                                            <span class="left_border"></span>
+                                            <span className="left_border"></span>
                                             React js
-                                            <span class="right_border"></span>
+                                            <span className="right_border"></span>
                                         </a>
                                         <a
                                             href="#"
-                                            class="custom_btn tag_bottom"
+                                            className="custom_btn tag_bottom"
                                         >
-                                            <span class="left_border"></span>
+                                            <span className="left_border"></span>
                                             html
-                                            <span class="right_border"></span>
+                                            <span className="right_border"></span>
                                         </a>
                                     </div>
                                 </div>
 
-                                <div class="blog-title">
-                                    <h3 class="mt_15 mb_15">
+                                <div className="blog-title">
+                                    <h3 className="mt_15 mb_15">
                                         <a href="#">
                                             Bike Store e-commerce Website .
                                         </a>
@@ -156,61 +156,61 @@ const HomeBlog = () => {
                                         printing and typesetting industry. Lorem
                                         Ipsum has been the industry's ....
                                     </p>
-                                    <div class="arrow mt_5 text-end">
+                                    <div className="arrow mt_5 text-end">
                                         <a href="#">
-                                            <i class="fal fa-long-arrow-right"></i>
+                                            <i className="fal fa-long-arrow-right"></i>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="blog-box">
+                    <div className="item">
+                        <div className="blog-box">
                             <div
-                                class="blog-img"
+                                className="blog-img"
                                 style={{
                                     backgroundImage: `url(${img})`,
                                 }}
                             ></div>
-                            <div class="blog-details">
-                                <span class="blog-date mr_5">
+                            <div className="blog-details">
+                                <span className="blog-date mr_5">
                                     25/12/21 by Admin
                                 </span>
                                 <div className="d-flex a">
-                                    <span class="blog-date mr_10">
+                                    <span className="blog-date mr_10">
                                         Category :
                                     </span>
                                     <div className="tag">
                                         <a
                                             href="#"
-                                            class="custom_btn tag_bottom"
+                                            className="custom_btn tag_bottom"
                                         >
-                                            <span class="left_border"></span>
+                                            <span className="left_border"></span>
                                             html
-                                            <span class="right_border"></span>
+                                            <span className="right_border"></span>
                                         </a>
                                         <a
                                             href="#"
-                                            class="custom_btn tag_bottom"
+                                            className="custom_btn tag_bottom"
                                         >
-                                            <span class="left_border"></span>
+                                            <span className="left_border"></span>
                                             React js
-                                            <span class="right_border"></span>
+                                            <span className="right_border"></span>
                                         </a>
                                         <a
                                             href="#"
-                                            class="custom_btn tag_bottom"
+                                            className="custom_btn tag_bottom"
                                         >
-                                            <span class="left_border"></span>
+                                            <span className="left_border"></span>
                                             html
-                                            <span class="right_border"></span>
+                                            <span className="right_border"></span>
                                         </a>
                                     </div>
                                 </div>
 
-                                <div class="blog-title">
-                                    <h3 class="mt_15 mb_15">
+                                <div className="blog-title">
+                                    <h3 className="mt_15 mb_15">
                                         <a href="#">
                                             Bike Store e-commerce Website .
                                         </a>
@@ -220,61 +220,61 @@ const HomeBlog = () => {
                                         printing and typesetting industry. Lorem
                                         Ipsum has been the industry's ....
                                     </p>
-                                    <div class="arrow mt_5 text-end">
+                                    <div className="arrow mt_5 text-end">
                                         <a href="#">
-                                            <i class="fal fa-long-arrow-right"></i>
+                                            <i className="fal fa-long-arrow-right"></i>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="blog-box">
+                    <div className="item">
+                        <div className="blog-box">
                             <div
-                                class="blog-img"
+                                className="blog-img"
                                 style={{
                                     backgroundImage: `url(${img})`,
                                 }}
                             ></div>
-                            <div class="blog-details">
-                                <span class="blog-date mr_5">
+                            <div className="blog-details">
+                                <span className="blog-date mr_5">
                                     25/12/21 by Admin
                                 </span>
                                 <div className="d-flex a">
-                                    <span class="blog-date mr_10">
+                                    <span className="blog-date mr_10">
                                         Category :
                                     </span>
                                     <div className="tag">
                                         <a
                                             href="#"
-                                            class="custom_btn tag_bottom"
+                                            className="custom_btn tag_bottom"
                                         >
-                                            <span class="left_border"></span>
+                                            <span className="left_border"></span>
                                             html
-                                            <span class="right_border"></span>
+                                            <span className="right_border"></span>
                                         </a>
                                         <a
                                             href="#"
-                                            class="custom_btn tag_bottom"
+                                            className="custom_btn tag_bottom"
                                         >
-                                            <span class="left_border"></span>
+                                            <span className="left_border"></span>
                                             React js
-                                            <span class="right_border"></span>
+                                            <span className="right_border"></span>
                                         </a>
                                         <a
                                             href="#"
-                                            class="custom_btn tag_bottom"
+                                            className="custom_btn tag_bottom"
                                         >
-                                            <span class="left_border"></span>
+                                            <span className="left_border"></span>
                                             html
-                                            <span class="right_border"></span>
+                                            <span className="right_border"></span>
                                         </a>
                                     </div>
                                 </div>
 
-                                <div class="blog-title">
-                                    <h3 class="mt_15 mb_15">
+                                <div className="blog-title">
+                                    <h3 className="mt_15 mb_15">
                                         <a href="#">
                                             Bike Store e-commerce Website .
                                         </a>
@@ -284,61 +284,61 @@ const HomeBlog = () => {
                                         printing and typesetting industry. Lorem
                                         Ipsum has been the industry's ....
                                     </p>
-                                    <div class="arrow mt_5 text-end">
+                                    <div className="arrow mt_5 text-end">
                                         <a href="#">
-                                            <i class="fal fa-long-arrow-right"></i>
+                                            <i className="fal fa-long-arrow-right"></i>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="blog-box">
+                    <div className="item">
+                        <div className="blog-box">
                             <div
-                                class="blog-img"
+                                className="blog-img"
                                 style={{
                                     backgroundImage: `url(${img})`,
                                 }}
                             ></div>
-                            <div class="blog-details">
-                                <span class="blog-date mr_5">
+                            <div className="blog-details">
+                                <span className="blog-date mr_5">
                                     25/12/21 by Admin
                                 </span>
                                 <div className="d-flex a">
-                                    <span class="blog-date mr_10">
+                                    <span className="blog-date mr_10">
                                         Category :
                                     </span>
                                     <div className="tag">
                                         <a
                                             href="#"
-                                            class="custom_btn tag_bottom"
+                                            className="custom_btn tag_bottom"
                                         >
-                                            <span class="left_border"></span>
+                                            <span className="left_border"></span>
                                             html
-                                            <span class="right_border"></span>
+                                            <span className="right_border"></span>
                                         </a>
                                         <a
                                             href="#"
-                                            class="custom_btn tag_bottom"
+                                            className="custom_btn tag_bottom"
                                         >
-                                            <span class="left_border"></span>
+                                            <span className="left_border"></span>
                                             React js
-                                            <span class="right_border"></span>
+                                            <span className="right_border"></span>
                                         </a>
                                         <a
                                             href="#"
-                                            class="custom_btn tag_bottom"
+                                            className="custom_btn tag_bottom"
                                         >
-                                            <span class="left_border"></span>
+                                            <span className="left_border"></span>
                                             html
-                                            <span class="right_border"></span>
+                                            <span className="right_border"></span>
                                         </a>
                                     </div>
                                 </div>
 
-                                <div class="blog-title">
-                                    <h3 class="mt_15 mb_15">
+                                <div className="blog-title">
+                                    <h3 className="mt_15 mb_15">
                                         <a href="#">
                                             Bike Store e-commerce Website .
                                         </a>
@@ -348,9 +348,9 @@ const HomeBlog = () => {
                                         printing and typesetting industry. Lorem
                                         Ipsum has been the industry's ....
                                     </p>
-                                    <div class="arrow mt_5 text-end">
+                                    <div className="arrow mt_5 text-end">
                                         <a href="#">
-                                            <i class="fal fa-long-arrow-right"></i>
+                                            <i className="fal fa-long-arrow-right"></i>
                                         </a>
                                     </div>
                                 </div>

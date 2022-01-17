@@ -16,7 +16,7 @@ const Dashboard = () => {
         <div className="dashboard_area sticky_top_gap">
             <div className="dashboard_left_side ">
                 <div className="dashboard_toggle">
-                    <i class="far fa-angle-right"></i>
+                    <i className="far fa-angle-right"></i>
                 </div>
                 <div className="dashboard_menu">
                     <div className="dashboard_member_address">
@@ -28,7 +28,7 @@ const Dashboard = () => {
                         </h5>
                     </div>
                     <div className="DeshboardMenu_icon">
-                        <i class="fal fa-home"></i>
+                        <i className="fal fa-home"></i>
                     </div>
                     <DeshboardMenu></DeshboardMenu>
                 </div>

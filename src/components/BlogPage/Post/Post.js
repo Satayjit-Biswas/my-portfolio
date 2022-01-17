@@ -4,7 +4,7 @@ import "./Post.css";
 const Post = () => {
     return (
         <div className="post_area ">
-            <h4 class="text-center mb_30 mt_20">
+            <h4 className="text-center mb_30 mt_20">
                 <span className="text_tb_line">All post</span>
             </h4>
             <div className="post_area_box">
@@ -35,26 +35,26 @@ const Post = () => {
                         </div>
                         <div className="post_read_more">
                             <a href="#" className="custom_btn">
-                                <span class="left_border"></span> read more
-                                <span class="right_border"></span>
+                                <span className="left_border"></span> read more
+                                <span className="right_border"></span>
                             </a>
                         </div>
                         <div className="post_icon mt_10">
                             <div className="post_icon_box">
                                 <a href="#" target="_blank">
-                                    <i class="fab fa-youtube"></i>
+                                    <i className="fab fa-youtube"></i>
                                 </a>
                                 <a href="#" target="_blank">
-                                    <i class="fab fa-facebook-f"></i>
+                                    <i className="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="#" target="_blank">
-                                    <i class="fab fa-twitter"></i>
+                                    <i className="fab fa-twitter"></i>
                                 </a>
                                 <a href="#" target="_blank">
-                                    <i class="fab fa-instagram"></i>
+                                    <i className="fab fa-instagram"></i>
                                 </a>
                                 <a href="#" target="_blank">
-                                    <i class="fab fa-github"></i>
+                                    <i className="fab fa-github"></i>
                                 </a>
                             </div>
                         </div>
@@ -89,26 +89,26 @@ const Post = () => {
                         </div>
                         <div className="post_read_more">
                             <a href="#" className="custom_btn">
-                                <span class="left_border"></span> read more
-                                <span class="right_border"></span>
+                                <span className="left_border"></span> read more
+                                <span className="right_border"></span>
                             </a>
                         </div>
                         <div className="post_icon mt_10">
                             <div className="post_icon_box">
                                 <a href="#" target="_blank">
-                                    <i class="fab fa-youtube"></i>
+                                    <i className="fab fa-youtube"></i>
                                 </a>
                                 <a href="#" target="_blank">
-                                    <i class="fab fa-facebook-f"></i>
+                                    <i className="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="#" target="_blank">
-                                    <i class="fab fa-twitter"></i>
+                                    <i className="fab fa-twitter"></i>
                                 </a>
                                 <a href="#" target="_blank">
-                                    <i class="fab fa-instagram"></i>
+                                    <i className="fab fa-instagram"></i>
                                 </a>
                                 <a href="#" target="_blank">
-                                    <i class="fab fa-github"></i>
+                                    <i className="fab fa-github"></i>
                                 </a>
                             </div>
                         </div>
@@ -143,26 +143,26 @@ const Post = () => {
                         </div>
                         <div className="post_read_more">
                             <a href="#" className="custom_btn">
-                                <span class="left_border"></span> read more
-                                <span class="right_border"></span>
+                                <span className="left_border"></span> read more
+                                <span className="right_border"></span>
                             </a>
                         </div>
                         <div className="post_icon mt_10">
                             <div className="post_icon_box">
                                 <a href="#" target="_blank">
-                                    <i class="fab fa-youtube"></i>
+                                    <i className="fab fa-youtube"></i>
                                 </a>
                                 <a href="#" target="_blank">
-                                    <i class="fab fa-facebook-f"></i>
+                                    <i className="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="#" target="_blank">
-                                    <i class="fab fa-twitter"></i>
+                                    <i className="fab fa-twitter"></i>
                                 </a>
                                 <a href="#" target="_blank">
-                                    <i class="fab fa-instagram"></i>
+                                    <i className="fab fa-instagram"></i>
                                 </a>
                                 <a href="#" target="_blank">
-                                    <i class="fab fa-github"></i>
+                                    <i className="fab fa-github"></i>
                                 </a>
                             </div>
                         </div>
@@ -197,26 +197,26 @@ const Post = () => {
                         </div>
                         <div className="post_read_more">
                             <a href="#" className="custom_btn">
-                                <span class="left_border"></span> read more
-                                <span class="right_border"></span>
+                                <span className="left_border"></span> read more
+                                <span className="right_border"></span>
                             </a>
                         </div>
                         <div className="post_icon mt_10">
                             <div className="post_icon_box">
                                 <a href="#" target="_blank">
-                                    <i class="fab fa-youtube"></i>
+                                    <i className="fab fa-youtube"></i>
                                 </a>
                                 <a href="#" target="_blank">
-                                    <i class="fab fa-facebook-f"></i>
+                                    <i className="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="#" target="_blank">
-                                    <i class="fab fa-twitter"></i>
+                                    <i className="fab fa-twitter"></i>
                                 </a>
                                 <a href="#" target="_blank">
-                                    <i class="fab fa-instagram"></i>
+                                    <i className="fab fa-instagram"></i>
                                 </a>
                                 <a href="#" target="_blank">
-                                    <i class="fab fa-github"></i>
+                                    <i className="fab fa-github"></i>
                                 </a>
                             </div>
                         </div>

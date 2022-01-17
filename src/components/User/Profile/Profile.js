@@ -25,10 +25,10 @@ const Profile = () => {
                                 <h5>role :</h5>
                                 <p>Admin</p>
                             </div>
-                            <Link to="/admin" class="custom_btn mr_15">
-                                <span class="left_border"></span>
+                            <Link to="/admin" className="custom_btn mr_15">
+                                <span className="left_border"></span>
                                 dashboard link
-                                <span class="right_border"></span>
+                                <span className="right_border"></span>
                             </Link>
                         </div>
                     </div>

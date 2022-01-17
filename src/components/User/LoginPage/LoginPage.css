@@ -23,11 +23,14 @@
 textarea {
     min-height: 200px;
 }
-.login_area p a{
+.login_area p a,.login_icon
+{
     color: #a2a0a0 !important;
     text-decoration: none;
     transition: .3s;
+    cursor: pointer;
 }
-.login_area p a:hover{
+.login_area p a:hover ,.login_icon:hover
+{
     color: #ffff00 !important;
 }

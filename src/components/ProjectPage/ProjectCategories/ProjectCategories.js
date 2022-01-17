@@ -9,19 +9,19 @@ const ProjectCategories = () => {
             <div className="row">
                 <div className="col-6">
                     <div className="categories_link">
-                        <i class="fal fa-long-arrow-right"></i>
+                        <i className="fal fa-long-arrow-right"></i>
                         <a href="#">html 5</a>
                     </div>
                     <div className="categories_link">
-                        <i class="fal fa-long-arrow-right"></i>
+                        <i className="fal fa-long-arrow-right"></i>
                         <a href="#">css 3</a>
                     </div>
                     <div className="categories_link">
-                        <i class="fal fa-long-arrow-right"></i>
+                        <i className="fal fa-long-arrow-right"></i>
                         <a href="#">react</a>
                     </div>
                     <div className="categories_link">
-                        <i class="fal fa-long-arrow-right"></i>
+                        <i className="fal fa-long-arrow-right"></i>
                         <a href="#">bootstrap</a>
                     </div>
                 </div>

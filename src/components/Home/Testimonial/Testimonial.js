@@ -10,8 +10,8 @@ const Testimonial = () => {
     return (
         <div className="testimonial_area section_top_gap">
             <div className="container">
-                <h4 class="text-center section_bottom_gap">
-                    <span class="text_tb_line">Client Review</span>
+                <h4 className="text-center section_bottom_gap">
+                    <span className="text_tb_line">Client Review</span>
                 </h4>
                 <OwlCarousel
                     className="owl-theme"
@@ -21,12 +21,12 @@ const Testimonial = () => {
                     margin={15}
                 >
                     <div className="item">
-                        <div class="client-review-box text-center">
-                            <div class="client-img">
+                        <div className="client-review-box text-center">
+                            <div className="client-img">
                                 <img src={img} alt="client-img" />
                             </div>
-                            <div class="client-name">Mr. Lari Cokko</div>
-                            <div class="star">
+                            <div className="client-name">Mr. Lari Cokko</div>
+                            <div className="star">
                                 <Rating
                                     name="half-rating-read"
                                     defaultValue={3.5}
@@ -45,12 +45,12 @@ const Testimonial = () => {
                         </div>
                     </div>
                     <div className="item">
-                        <div class="client-review-box text-center">
-                            <div class="client-img">
+                        <div className="client-review-box text-center">
+                            <div className="client-img">
                                 <img src={img} alt="client-img" />
                             </div>
-                            <div class="client-name">Mr. Lari Cokko</div>
-                            <div class="star">
+                            <div className="client-name">Mr. Lari Cokko</div>
+                            <div className="star">
                                 <Rating
                                     name="half-rating-read"
                                     defaultValue={5}
@@ -69,12 +69,12 @@ const Testimonial = () => {
                         </div>
                     </div>
                     <div className="item">
-                        <div class="client-review-box text-center">
-                            <div class="client-img">
+                        <div className="client-review-box text-center">
+                            <div className="client-img">
                                 <img src={img} alt="client-img" />
                             </div>
-                            <div class="client-name">Mr. Lari Cokko</div>
-                            <div class="star">
+                            <div className="client-name">Mr. Lari Cokko</div>
+                            <div className="star">
                                 <Rating
                                     name="half-rating-read"
                                     defaultValue={4.5}

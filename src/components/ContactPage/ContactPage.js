@@ -13,7 +13,7 @@ const ContactPage = () => {
                                 <div className="contact_address_box">
                                     <div className="contact_address_sub_box">
                                         <div className="contact_address_icon">
-                                            <i class="fal fa-map-marker-alt"></i>
+                                            <i className="fal fa-map-marker-alt"></i>
                                         </div>
                                         <div className="contact_address_text">
                                             <h5>Address :</h5>
@@ -28,7 +28,7 @@ const ContactPage = () => {
                                 <div className="contact_address_box">
                                     <div className="contact_address_sub_box">
                                         <div className="contact_address_icon">
-                                            <i class="fal fa-envelope"></i>
+                                            <i className="fal fa-envelope"></i>
                                         </div>
                                         <div className="contact_address_text">
                                             <h5>Gmail :</h5>
@@ -52,7 +52,7 @@ const ContactPage = () => {
                                 <div className="contact_address_box">
                                     <div className="contact_address_sub_box">
                                         <div className="contact_address_icon">
-                                            <i class="fal fa-mobile"></i>
+                                            <i className="fal fa-mobile"></i>
                                         </div>
                                         <div className="contact_address_text">
                                             <h5>Call Me :</h5>
@@ -77,25 +77,25 @@ const ContactPage = () => {
                                 <div className="contact_address_box">
                                     <div className="contact_address_sub_box">
                                         <div className="contact_address_icon">
-                                            <i class="fal fa-share-alt"></i>{" "}
+                                            <i className="fal fa-share-alt"></i>{" "}
                                         </div>
                                         <div className="contact_address_text">
                                             <h5>Social Media :</h5>
                                             <p>
                                                 <a href="#">
-                                                    <i class="fab fa-linkedin-in"></i>
+                                                    <i className="fab fa-linkedin-in"></i>
                                                 </a>
                                                 <a href="#">
-                                                    <i class="fab fa-skype"></i>
+                                                    <i className="fab fa-skype"></i>
                                                 </a>
                                                 <a href="#">
-                                                    <i class="fab fa-whatsapp"></i>
+                                                    <i className="fab fa-whatsapp"></i>
                                                 </a>
                                                 <a href="#">
-                                                    <i class="fab fa-linkedin-in"></i>
+                                                    <i className="fab fa-linkedin-in"></i>
                                                 </a>
                                                 <a href="#">
-                                                    <i class="fab fa-github"></i>
+                                                    <i className="fab fa-github"></i>
                                                 </a>
                                             </p>
                                         </div>
