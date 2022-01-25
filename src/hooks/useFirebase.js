@@ -6,6 +6,7 @@ import {
     GoogleAuthProvider,
     onAuthStateChanged,
     signOut,
+    createUserWithEmailAndPassword,
 } from "firebase/auth";
 
 initializeAuthentication();
@@ -13,6 +14,22 @@ const useFirebase = () => {
     const [user, setUser] = useState({});
     const [error, setError] = useState("");
     const auth = getAuth();
+    // create gmail user
+    const createUserWithEmail = (email, password) => {
+        if (password.length > 5) {
+            createUserWithEmailAndPassword(auth, email, password)
+                .then((result) => {
+                    const user = result.user;
+                    setError("");
+                    console.log(user);
+                })
+                .catch((err) => {
+                    setError(err);
+                });
+        } else {
+            setError("Password must be 6 letter..");
+        }
+    };
 
     // sing in google
     const googleProvider = new GoogleAuthProvider();
@@ -43,7 +60,9 @@ const useFirebase = () => {
         user,
         error,
         signInUsingGoogle,
+        createUserWithEmail,
         logOut,
+        setError,
     };
 };
 

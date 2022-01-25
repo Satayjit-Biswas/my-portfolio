@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import useFirebase from "../../../hooks/useFirebase";
 import "./RegisterPage.css";
 
 const RegisterPage = () => {
+    const { createUserWithEmail, error, setError, user } = useFirebase();
     const [regname, setRegname] = useState(" ");
     const [regemail, setEmail] = useState(" ");
     const [regpass, setPass] = useState(" ");
-    const [error, setError] = useState(" ");
     const [loading, setloading] = useState(false);
 
     const handleName = (e) => {
@@ -18,6 +19,15 @@ const RegisterPage = () => {
     const handlePass = (e) => {
         setPass(e.target.value);
     };
+    const handleRegistration = (e) => {
+        e.preventDefault();
+        if (user.email) {
+            setError("Sorry You Are Already Login");
+        } else {
+            createUserWithEmail(regemail, regpass);
+        }
+    };
+
     return (
         <div className="register_area sticky_top_gap">
             <div className="container">
@@ -27,13 +37,14 @@ const RegisterPage = () => {
                             <span className="text_tb_line">Create Account</span>
                         </h4>
                     </div>
-                    <form>
+                    <form onSubmit={handleRegistration}>
                         <div className="row justify-content-center align-items-center">
                             <div className="col-lg-8 col-md-9 col-12">
                                 <input
                                     type="text"
                                     placeholder="Name"
                                     className="inputbox"
+                                    onBlur={handleName}
                                     required
                                 />
                             </div>
@@ -42,6 +53,7 @@ const RegisterPage = () => {
                                     type="email"
                                     placeholder="Email"
                                     className="inputbox"
+                                    onBlur={handleEmail}
                                     required
                                 />
                             </div>
@@ -52,6 +64,7 @@ const RegisterPage = () => {
                                     id=""
                                     placeholder="Password"
                                     className="inputbox"
+                                    onBlur={handlePass}
                                     required
                                 />
                             </div>
@@ -68,15 +81,16 @@ const RegisterPage = () => {
                                     Account
                                     <span className="right_border"></span>
                                 </button>
-                                <p id="my-form-status" className="mt_30">
-                                    Already have an account?
-                                    <Link to="/loginpage" className="ml_10">
-                                        ( login )
-                                    </Link>
-                                </p>
                             </div>
                         </div>
                     </form>
+                    <p className="text-center mt_10 text-danger">{error}</p>
+                    <p id="my-form-status" className="text-center mt_30">
+                        Already have an account?
+                        <Link to="/loginpage" className="ml_10">
+                            ( login )
+                        </Link>
+                    </p>
                 </div>
             </div>
         </div>

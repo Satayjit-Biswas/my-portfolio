@@ -43,7 +43,6 @@ const Header = () => {
             });
         }
     }, [user.email]);
-    console.log(user);
     return (
         <header className="header_area">
             <div className="container">
