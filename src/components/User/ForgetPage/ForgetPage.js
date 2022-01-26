@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import useFirebase from "../../../hooks/useFirebase";
 import "./ForgetPage.css";
 
 const ForgetPage = () => {
+    const { setError, resetInPass, error, user } = useFirebase();
+    const [resetemail, setResetEmail] = useState(" ");
+
+    const handleresetemail = (e) => {
+        setResetEmail(e.target.value);
+    };
+    const handleResetWithEmail = (e) => {
+        e.preventDefault();
+        if (user.email) {
+            setError("Sorry You Are Already Login");
+        } else {
+            resetInPass(resetemail);
+        }
+    };
     return (
         <div className="forget_area sticky_top_gap">
             <div className="container">
@@ -14,13 +29,14 @@ const ForgetPage = () => {
                             </span>
                         </h4>
                     </div>
-                    <form>
+                    <form onSubmit={handleResetWithEmail}>
                         <div className="row justify-content-center align-items-center">
                             <div className="col-lg-8 col-md-9 col-12">
                                 <input
                                     type="email"
                                     placeholder="Email"
                                     className="inputbox"
+                                    onBlur={handleresetemail}
                                     required
                                 />
                             </div>
@@ -37,6 +53,9 @@ const ForgetPage = () => {
                                     Continue
                                     <span className="right_border"></span>
                                 </button>
+                                <p className="text-center mt_10 text-danger">
+                                    {error}
+                                </p>
                             </div>
                         </div>
                     </form>

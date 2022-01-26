@@ -24,7 +24,7 @@ const RegisterPage = () => {
         if (user.email) {
             setError("Sorry You Are Already Login");
         } else {
-            createUserWithEmail(regemail, regpass);
+            createUserWithEmail(regemail, regpass, regname);
         }
     };
 
