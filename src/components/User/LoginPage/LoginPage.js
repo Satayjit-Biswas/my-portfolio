@@ -77,9 +77,9 @@ const LoginPage = () => {
                                     >
                                         <i className="fab fa-google"></i>
                                     </span>
-                                    <span className="login_icon">
+                                    {/* <span className="login_icon">
                                         <i className="fab fa-facebook"></i>
-                                    </span>
+                                    </span> */}
                                 </p>
                                 <p id="my-form-status">
                                     <Link to="/forgetpage" className="mr_10">

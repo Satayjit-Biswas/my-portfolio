@@ -16,6 +16,7 @@ initializeAuthentication();
 const useFirebase = () => {
     const [user, setUser] = useState({});
     const [error, setError] = useState("");
+    const [loading, setloading] = useState(false);
     const auth = getAuth();
     // create gmail user
     const setUserName = (name) => {
@@ -25,14 +26,17 @@ const useFirebase = () => {
     };
     const createUserWithEmail = (email, password, name) => {
         if (password.length > 5) {
+            setloading(true);
             createUserWithEmailAndPassword(auth, email, password)
                 .then((result) => {
                     const user = result.user;
                     setError("");
                     setUserName(name);
+                    setloading(false);
                 })
                 .catch((err) => {
                     setError(err.message);
+                    setloading(false);
                 });
         } else {
             setError("Password must be 6 letter..");
@@ -95,6 +99,8 @@ const useFirebase = () => {
         logOut,
         resetInPass,
         setError,
+        setloading,
+        loading,
     };
 };
 

@@ -4,11 +4,11 @@ import useFirebase from "../../../hooks/useFirebase";
 import "./RegisterPage.css";
 
 const RegisterPage = () => {
-    const { createUserWithEmail, error, setError, user } = useFirebase();
+    const { createUserWithEmail, error, setError, user, setloading, loading } =
+        useFirebase();
     const [regname, setRegname] = useState(" ");
     const [regemail, setEmail] = useState(" ");
     const [regpass, setPass] = useState(" ");
-    const [loading, setloading] = useState(false);
 
     const handleName = (e) => {
         setRegname(e.target.value);
@@ -77,8 +77,8 @@ const RegisterPage = () => {
                                     id="my-form"
                                     className="custom_btn"
                                 >
-                                    <span className="left_border"></span> Create
-                                    Account
+                                    <span className="left_border"></span>
+                                    {loading ? "Loading..." : "Create Account"}
                                     <span className="right_border"></span>
                                 </button>
                             </div>
