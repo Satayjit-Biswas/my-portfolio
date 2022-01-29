@@ -17,7 +17,28 @@ const useFirebase = () => {
     const [user, setUser] = useState({});
     const [error, setError] = useState("");
     const [loading, setloading] = useState(false);
+    const [adduser, setadduser] = useState(true);
+    const [username, setName] = useState("");
+    const [useremail, setemail] = useState("");
+    const [userrole, setrole] = useState("");
+
     const auth = getAuth();
+
+    // find user
+    //fetch  SingleServerUser
+    const url = `http://localhost:5000/user/${user.email}`;
+    useEffect(() => {
+        fetch(url)
+            .then((res) => res.json())
+            .then(
+                (data) => (
+                    setadduser(false),
+                    setName(data.name),
+                    setemail(data.email),
+                    setrole(data.role)
+                )
+            );
+    }, [user.email]);
     // create gmail user
     const setUserName = (name) => {
         updateProfile(auth.currentUser, {
@@ -32,6 +53,9 @@ const useFirebase = () => {
                     const user = result.user;
                     setError("");
                     setUserName(name);
+                    if (adduser) {
+                        UserServer(name, email, "POST");
+                    }
                     setloading(false);
                 })
                 .catch((err) => {
@@ -72,6 +96,13 @@ const useFirebase = () => {
         signInWithPopup(auth, googleProvider)
             .then((result) => {
                 // console.log(result.user);
+                if (adduser) {
+                    UserServer(
+                        result.user.displayName,
+                        result.user.email,
+                        "POST"
+                    );
+                }
             })
             .catch((err) => {
                 setError(err);
@@ -90,8 +121,23 @@ const useFirebase = () => {
             }
         });
     }, [user]);
+
+    // add to user in server
+    const UserServer = (name, email, method) => {
+        const adduser = { name: name, email: email, role: "member" };
+        fetch("http://localhost:5000/user", {
+            method: method,
+            headers: {
+                "content-type": "application/json",
+            },
+            body: JSON.stringify(adduser),
+        }).then();
+    };
     return {
         user,
+        username,
+        useremail,
+        userrole,
         error,
         signInUsingGoogle,
         createUserWithEmail,

@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./DeshboardMenu.css";
 
 const DeshboardMenu = () => {
@@ -28,13 +29,16 @@ const DeshboardMenu = () => {
                     <div className="DeshboardMenu_dropdown_menu">
                         <ul>
                             <li>
-                                <a href="#">Home</a>
+                                <a href="#">All Service</a>
                             </li>
                             <li>
-                                <a href="#">Home</a>
+                                <Link to="addservice">Add Service</Link>
                             </li>
                             <li>
-                                <a href="#">Home</a>
+                                <a href="#">All Question</a>
+                            </li>
+                            <li>
+                                <a href="#">Add Question</a>
                             </li>
                         </ul>
                     </div>

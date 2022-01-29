@@ -10,16 +10,21 @@
     text-align: center;
 }
 .profile_sub_box_img img{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
     background-color: #fff000;
     padding: 5px;
     object-fit: cover;
 }
-.user_name, .user_role , .user_gmail{
+.user_name, .user_role{
     display: flex;
     text-transform: capitalize;
+    margin-top: 15px;
+}
+.user_gmail{
+    display: flex;
+    text-transform: lowercase;
     margin-top: 15px;
 }
 .user_name h5 , .user_role h5 ,.user_gmail h5{

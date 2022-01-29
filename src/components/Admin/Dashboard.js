@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Outlet } from "react-router-dom";
 import "./Dashboard.css";
 import DeshboardHome from "./DeshboardHome/DeshboardHome";
 import DeshboardMenu from "./DeshboardMenu/DeshboardMenu";
@@ -35,7 +36,7 @@ const Dashboard = () => {
             </div>
             <div className="container">
                 <div className="dashboard_right_side">
-                    <DeshboardHome></DeshboardHome>
+                    <Outlet />
                 </div>
             </div>
         </div>
