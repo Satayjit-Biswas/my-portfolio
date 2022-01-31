@@ -31,9 +31,9 @@
     overflow: hidden;
     transition: .3s;
 }
-.show_drop_menu .DeshboardMenu_dropdown_menu{
+.show_drop_menu{
     max-height: 180px;
 }
-.show_drop_menu .DeshboardMenu_dropdown::after{
+.rotate::after{
     transform: rotate(180deg);
 }

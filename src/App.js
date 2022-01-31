@@ -16,6 +16,7 @@ import ProjectDetails from "./components/ProjectPage/ProjectDetails/ProjectDetai
 import Dashboard from "./components/Admin/Dashboard";
 import Profile from "./components/User/Profile/Profile";
 import AddService from "./components/Admin/AddService/AddService";
+import Alluser from "./components/Admin/Alluser/Alluser";
 const App = () => {
     return (
         <div>
@@ -36,6 +37,7 @@ const App = () => {
                 <Route path="forgetpage" element={<ForgetPage />}></Route>
                 <Route path="admin" element={<Dashboard />}>
                     <Route path="addservice" element={<AddService />}></Route>
+                    <Route path="alluser" element={<Alluser />}></Route>
                 </Route>
                 <Route path="profile" element={<Profile />}></Route>
                 <Route path="*" element={<ErrorPage />}></Route>

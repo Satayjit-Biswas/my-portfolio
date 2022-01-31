@@ -1,0 +1,31 @@
+.alluser_page_form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.alluser_page table {
+    background-color: rgb(36, 36, 36);
+    padding: 20px;
+    display: block;
+    margin-top: 20px;
+    text-transform: capitalize;
+    overflow-x: auto;
+
+}
+.alluser_page th{
+    border: 2px solid #fff;
+    color: #ffff00;
+    text-align: center;
+    font-size: 15px;
+}
+.alluser_page table td ,th{
+    border: 2px solid #fff;
+    text-align: center;
+    font-size: 13px;
+    min-width: 280px;
+    padding: 8px;
+}
+.alluser_page .User_email{
+    min-width: 340px;
+    text-transform: lowercase;
+}

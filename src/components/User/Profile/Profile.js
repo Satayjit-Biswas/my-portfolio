@@ -12,6 +12,9 @@ const Profile = () => {
             setadmin(true);
         }
     }, [userrole]);
+    console.log(username);
+    console.log(useremail);
+    console.log(userrole);
     return (
         <div className="profile_area">
             <div className="container">
