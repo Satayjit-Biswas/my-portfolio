@@ -17,6 +17,7 @@ import Dashboard from "./components/Admin/Dashboard";
 import Profile from "./components/User/Profile/Profile";
 import AddService from "./components/Admin/AddService/AddService";
 import Alluser from "./components/Admin/Alluser/Alluser";
+import AllService from "./components/Admin/AllService/AllService";
 const App = () => {
     return (
         <div>
@@ -35,8 +36,12 @@ const App = () => {
                 <Route path="loginpage" element={<LoginPage />}></Route>
                 <Route path="registerpage" element={<RegisterPage />}></Route>
                 <Route path="forgetpage" element={<ForgetPage />}></Route>
+                {/* Deshbord  */}
                 <Route path="admin" element={<Dashboard />}>
+                    {/* service  */}
+                    <Route path="allservice" element={<AllService />}></Route>
                     <Route path="addservice" element={<AddService />}></Route>
+                    {/* user  */}
                     <Route path="alluser" element={<Alluser />}></Route>
                 </Route>
                 <Route path="profile" element={<Profile />}></Route>

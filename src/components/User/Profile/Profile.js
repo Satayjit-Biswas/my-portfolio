@@ -12,9 +12,7 @@ const Profile = () => {
             setadmin(true);
         }
     }, [userrole]);
-    console.log(username);
-    console.log(useremail);
-    console.log(userrole);
+    
     return (
         <div className="profile_area">
             <div className="container">
@@ -24,7 +22,7 @@ const Profile = () => {
                             <img
                                 src={user.photoURL ? user.photoURL : img}
                                 alt=""
-                                srcset=""
+                                srcSet=""
                             />
                         </div>
                         <div className="profile_sub_box_text">

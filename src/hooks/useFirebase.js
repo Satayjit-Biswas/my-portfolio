@@ -17,7 +17,6 @@ const useFirebase = () => {
     const [user, setUser] = useState({});
     const [error, setError] = useState("");
     const [loading, setloading] = useState(false);
-    const [adduser, setadduser] = useState(true);
     const [username, setName] = useState("");
     const [useremail, setemail] = useState("");
     const [userrole, setrole] = useState("");
@@ -30,14 +29,13 @@ const useFirebase = () => {
     useEffect(() => {
         fetch(url)
             .then((res) => res.json())
-            .then(
-                (data) => (
-                    setadduser(false),
-                    setName(data.name),
-                    setemail(data.email),
-                    setrole(data.role)
-                )
-            );
+            .then((data) => {
+                if (data) {
+                    setName(data.name);
+                    setemail(data.email);
+                    setrole(data.role);
+                }
+            });
     }, [user.email]);
     // create gmail user
     const setUserName = (name) => {
@@ -53,9 +51,7 @@ const useFirebase = () => {
                     const user = result.user;
                     setError("");
                     setUserName(name);
-                    if (adduser) {
-                        UserServer(name, email, "POST");
-                    }
+                    UserServer(name, email, "POST");
                     setloading(false);
                 })
                 .catch((err) => {
@@ -96,13 +92,7 @@ const useFirebase = () => {
         signInWithPopup(auth, googleProvider)
             .then((result) => {
                 // console.log(result.user);
-                if (adduser) {
-                    UserServer(
-                        result.user.displayName,
-                        result.user.email,
-                        "POST"
-                    );
-                }
+                UserServer(result.user.displayName, result.user.email, "POST");
             })
             .catch((err) => {
                 setError(err);

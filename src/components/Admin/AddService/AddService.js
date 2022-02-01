@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import useFirebase from "../../../hooks/useFirebase";
 
 const AddService = () => {
+    const { userrole } = useFirebase();
+
     const [serviceData, setServiceData] = useState({
         icon: "",
         title: "",
         description: "",
     });
     //handle input
-
     const InputEvent = (event) => {
         const { name, value } = event.target;
         setServiceData((prev) => {
@@ -22,6 +24,24 @@ const AddService = () => {
     // submit Service
     const submitService = (e) => {
         e.preventDefault();
+        if (userrole == "admin") {
+            fetch("http://localhost:5000/service", {
+                method: "POST",
+                headers: {
+                    "content-type": "application/json",
+                },
+                body: JSON.stringify(serviceData),
+            }).then((res) => {
+                setServiceData({
+                    icon: "",
+                    title: "",
+                    description: "",
+                });
+                toast.success("Add Service");
+            });
+        } else {
+            toast.error("Sorry you are not admin");
+        }
     };
 
     return (

@@ -18,7 +18,9 @@ const Alluser = () => {
     return (
         <div className="alluser_page mt_20">
             <h4 className="text-center">
-                <span className="text_tb_line">All User</span>
+                <span className="text_tb_line">
+                    All User ( {userdata.length} )
+                </span>
             </h4>
             <div className="alluser_page_form">
                 <table>

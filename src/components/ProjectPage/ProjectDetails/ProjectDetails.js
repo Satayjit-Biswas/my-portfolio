@@ -12,7 +12,7 @@ const ProjectDetails = () => {
                             <div className="ads728_90"></div>
                             <h3 className="">Bike Store e-commerce Website</h3>
                             <div className="project_details_img my-3">
-                                <img src={img} alt="" srcset="" />
+                                <img src={img} alt="" srcSet="" />
                             </div>
                             <h5>Which has been used in the project :</h5>
                             <p>
@@ -42,7 +42,7 @@ const ProjectDetails = () => {
                             </p>
                             <div className="ads728_90"></div>
                             <div className="project_details_img my-5">
-                                <img src={img} alt="" srcset="" />
+                                <img src={img} alt="" srcSet="" />
                             </div>
                             <p>
                                 This is an amazing bike store website. There are
@@ -66,7 +66,7 @@ const ProjectDetails = () => {
                             </p>
                             <div className="ads728_90"></div>
                             <div className="project_details_img my-5">
-                                <img src={img} alt="" srcset="" />
+                                <img src={img} alt="" srcSet="" />
                             </div>
                             <p className="mb_20">
                                 This is an amazing bike store website. There are

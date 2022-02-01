@@ -37,7 +37,7 @@ const DeshboardMenu = () => {
                     <div className="DeshboardMenu_dropdown_menu Service_drop_menu">
                         <ul>
                             <li>
-                                <a href="#">All Service</a>
+                                <Link to="allservice">All Service</Link>
                             </li>
                             <li>
                                 <Link to="addservice">Add Service</Link>
