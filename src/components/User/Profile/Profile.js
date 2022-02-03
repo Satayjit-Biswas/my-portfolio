@@ -26,18 +26,33 @@ const Profile = () => {
                             />
                         </div>
                         <div className="profile_sub_box_text">
-                            <div className="user_name">
-                                <h5>Name :</h5>
-                                <p>{username}</p>
-                            </div>
-                            <div className="user_gmail">
-                                <h5>Email :</h5>
-                                <p>{useremail}</p>
-                            </div>
-                            <div className="user_role mb_40">
-                                <h5>role :</h5>
-                                <p>{userrole}</p>
-                            </div>
+                            {useremail ? (
+                                <>
+                                    <div className="user_name">
+                                        <h5>Name :</h5>
+                                        <p>{username}</p>
+                                    </div>
+                                    <div className="user_gmail">
+                                        <h5>Email :</h5>
+                                        <p>{useremail}</p>
+                                    </div>
+                                    <div className="user_role mb_40">
+                                        <h5>role :</h5>
+                                        <p>{userrole}</p>
+                                    </div>
+                                </>
+                            ) : (
+                                <div className="text-center mt_20">
+                                    <div
+                                        class="spinner-border text-warning"
+                                        role="status"
+                                    >
+                                        <span class="visually-hidden">
+                                            Loading...
+                                        </span>
+                                    </div>
+                                </div>
+                            )}
                             {admin ? (
                                 <Link to="/admin" className="custom_btn mr_15">
                                     <span className="left_border"></span>

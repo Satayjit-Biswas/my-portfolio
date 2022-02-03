@@ -20,17 +20,28 @@ const OurService = () => {
                     </h4>
                 </div>
                 <div className="row">
-                    {HomeService.map((e) => (
-                        <div key={e._id} className="col-lg-4 col-md-6">
-                            <div className="service-box text-center">
-                                <span>
-                                    <i className={e.icon}></i>
-                                </span>
-                                <h3>{e.title}</h3>
-                                <p>{e.description}</p>
+                    {loading ? (
+                        <div className="text-center">
+                            <div
+                                class="spinner-border text-warning"
+                                role="status"
+                            >
+                                <span class="visually-hidden">Loading...</span>
                             </div>
                         </div>
-                    ))}
+                    ) : (
+                        HomeService.map((e) => (
+                            <div key={e._id} className="col-lg-4 col-md-6">
+                                <div className="service-box text-center">
+                                    <span>
+                                        <i className={e.icon}></i>
+                                    </span>
+                                    <h3>{e.title}</h3>
+                                    <p>{e.description}</p>
+                                </div>
+                            </div>
+                        ))
+                    )}
                     {/* <div className="col-lg-4 col-md-6">
                         <div className="service-box text-center">
                             <span>

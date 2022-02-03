@@ -29,3 +29,18 @@
     min-width: 340px;
     text-transform: lowercase;
 }
+.delete_btn{
+    background-color: red;
+    color: #fff;
+    padding: 2px 8px;
+    border: none;
+    box-shadow: 0 0px 2px 1px #fff;
+    transition: .3s;
+}
+.delete_btn:hover{
+    background-color: rgb(194, 0, 0);
+    color: #fff;
+    padding: 2px 8px;
+    border: none;
+    box-shadow: 0 0px 2px 1px rgb(172, 170, 170)
+}

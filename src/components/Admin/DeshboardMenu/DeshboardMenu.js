@@ -43,10 +43,10 @@ const DeshboardMenu = () => {
                                 <Link to="addservice">Add Service</Link>
                             </li>
                             <li>
-                                <a href="#">All Question</a>
+                                <Link to="allquestion">All Question</Link>
                             </li>
                             <li>
-                                <a href="#">Add Question</a>
+                                <Link to="addquestion">Add Question</Link>
                             </li>
                         </ul>
                     </div>

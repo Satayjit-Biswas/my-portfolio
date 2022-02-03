@@ -18,6 +18,8 @@ import Profile from "./components/User/Profile/Profile";
 import AddService from "./components/Admin/AddService/AddService";
 import Alluser from "./components/Admin/Alluser/Alluser";
 import AllService from "./components/Admin/AllService/AllService";
+import AllQuestion from "./components/Admin/AllQuestion/AllQuestion";
+import AddQuestion from "./components/Admin/AddQusetion/AddQuestion";
 const App = () => {
     return (
         <div>
@@ -41,6 +43,8 @@ const App = () => {
                     {/* service  */}
                     <Route path="allservice" element={<AllService />}></Route>
                     <Route path="addservice" element={<AddService />}></Route>
+                    <Route path="allquestion" element={<AllQuestion />}></Route>
+                    <Route path="addquestion" element={<AddQuestion />}></Route>
                     {/* user  */}
                     <Route path="alluser" element={<Alluser />}></Route>
                 </Route>

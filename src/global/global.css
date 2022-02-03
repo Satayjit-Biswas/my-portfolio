@@ -189,6 +189,10 @@ input:focus,
 textarea:focus {
     outline: none;
 }
+.spinner-border{
+    width: 55px;
+    height: 55px;
+}
 /* for google ads  */
 .ads728_90{
     width: 728px;

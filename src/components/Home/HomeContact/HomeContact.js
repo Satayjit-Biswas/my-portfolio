@@ -1,7 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import "./HomeContact.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const HomeContact = () => {
+    const [emailData, setemailData] = useState({
+        name: "",
+        email: "",
+        message: "",
+    });
+    //handle input
+    const InputEvent = (event) => {
+        const { name, value } = event.target;
+        setemailData((prev) => {
+            return {
+                ...prev,
+                [name]: value,
+            };
+        });
+    };
+    // submit email
+    const submitemail = (e) => {
+        e.preventDefault();
+        fetch("http://localhost:5000/sendemail", {
+            method: "POST",
+            headers: {
+                "content-type": "application/json",
+            },
+            body: JSON.stringify(emailData),
+        }).then((res) => {
+            setemailData({
+                name: "",
+                email: "",
+                message: "",
+            });
+            toast.success("Send Message");
+        });
+    };
     return (
         <div className="home_contact_area section_top_gap">
             <div className="container">
@@ -11,30 +46,38 @@ const HomeContact = () => {
                             <span className="text_tb_line">Contact me</span>
                         </h4>
                     </div>
-                    <form>
+                    <form onSubmit={submitemail}>
                         <div className="row">
                             <div className="col-md-6">
                                 <input
-                                    name="name :"
+                                    name="name"
                                     type="text"
                                     placeholder="Your Name"
                                     className="inputbox"
+                                    value={emailData.name}
+                                    onChange={InputEvent}
                                     required
                                 />
                             </div>
                             <div className="col-md-6">
                                 <input
                                     type="email"
+                                    name="email"
                                     placeholder="Email"
                                     className="inputbox"
                                     required
+                                    value={emailData.email}
+                                    onChange={InputEvent}
                                 />
                             </div>
                             <div className="col-12">
                                 <textarea
-                                    name="Message :"
+                                    name="message"
                                     className="inputbox"
                                     placeholder="Message"
+                                    onChange={InputEvent}
+                                    required
+                                    value={emailData.message}
                                 ></textarea>
                             </div>
                             <div className="col-12 text-center">
@@ -55,6 +98,7 @@ const HomeContact = () => {
                     </form>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };

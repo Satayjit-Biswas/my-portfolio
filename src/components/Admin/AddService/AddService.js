@@ -5,7 +5,6 @@ import useFirebase from "../../../hooks/useFirebase";
 
 const AddService = () => {
     const { userrole } = useFirebase();
-
     const [serviceData, setServiceData] = useState({
         icon: "",
         title: "",
@@ -83,6 +82,7 @@ const AddService = () => {
                                     className="inputbox"
                                     placeholder="Message"
                                     value={serviceData.description}
+                                    required
                                     onChange={InputEvent}
                                 ></textarea>
                             </div>

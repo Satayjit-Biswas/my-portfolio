@@ -29,9 +29,23 @@ const Alluser = () => {
                         <th>Email</th>
                         <th>role</th>
                     </tr>
-                    {userdata.map((e) => (
-                        <Singleuserdata key={e._id} user={e}></Singleuserdata>
-                    ))}
+                    {loading ? (
+                        <div className="text-center mt_30">
+                            <div
+                                class="spinner-border text-warning"
+                                role="status"
+                            >
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                    ) : (
+                        userdata.map((e) => (
+                            <Singleuserdata
+                                key={e._id}
+                                user={e}
+                            ></Singleuserdata>
+                        ))
+                    )}
                 </table>
             </div>
         </div>
