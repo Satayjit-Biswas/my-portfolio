@@ -20,6 +20,8 @@ import Alluser from "./components/Admin/Alluser/Alluser";
 import AllService from "./components/Admin/AllService/AllService";
 import AllQuestion from "./components/Admin/AllQuestion/AllQuestion";
 import AddQuestion from "./components/Admin/AddQusetion/AddQuestion";
+import AllProject from "./components/Admin/AllProject/AllProject";
+import AddProject from "./components/Admin/AddProject/AddProject";
 const App = () => {
     return (
         <div>
@@ -45,6 +47,9 @@ const App = () => {
                     <Route path="addservice" element={<AddService />}></Route>
                     <Route path="allquestion" element={<AllQuestion />}></Route>
                     <Route path="addquestion" element={<AddQuestion />}></Route>
+                    {/* service  */}
+                    <Route path="allproject" element={<AllProject />}></Route>
+                    <Route path="addproject" element={<AddProject />}></Route>
                     {/* user  */}
                     <Route path="alluser" element={<Alluser />}></Route>
                 </Route>

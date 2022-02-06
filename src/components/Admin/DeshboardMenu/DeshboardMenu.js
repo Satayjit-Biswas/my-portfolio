@@ -12,12 +12,20 @@ const DeshboardMenu = () => {
             const icon_rotate = document.querySelector(".Service_menu");
             icon_rotate.classList.toggle("rotate");
         });
-        const click_drop_down = document.querySelector(".user_menu");
-        click_drop_down.addEventListener("click", () => {
+        const click_user = document.querySelector(".user_menu");
+        click_user.addEventListener("click", () => {
             const add_drop_down_class =
                 document.querySelector(".user_drop_menu");
             add_drop_down_class.classList.toggle("show_drop_menu");
             const icon_rotate = document.querySelector(".user_menu");
+            icon_rotate.classList.toggle("rotate");
+        });
+        const click_project = document.querySelector(".project_menu");
+        click_project.addEventListener("click", () => {
+            const add_drop_down_class =
+                document.querySelector(".project_drop_menu");
+            add_drop_down_class.classList.toggle("show_drop_menu");
+            const icon_rotate = document.querySelector(".project_menu");
             icon_rotate.classList.toggle("rotate");
         });
     }, []);
@@ -52,7 +60,19 @@ const DeshboardMenu = () => {
                     </div>
                 </li>
                 <li>
-                    <a href="#">My project</a>
+                    <a href="#" className="DeshboardMenu_dropdown project_menu">
+                        My project
+                    </a>
+                    <div className="DeshboardMenu_dropdown_menu project_drop_menu">
+                        <ul>
+                            <li>
+                                <Link to="allproject">All project</Link>
+                            </li>
+                            <li>
+                                <Link to="addproject">Add project</Link>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
                 <li>
                     <a href="#">blog</a>
