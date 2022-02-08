@@ -1,6 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const ProjectCategories = () => {
+    const [allproject, setProject] = useState([]);
+    const [loading, setloading] = useState([true]);
+
+    //fetch  ServerProject
+    const url = "http://localhost:5000/project";
+    useEffect(() => {
+        fetch(url)
+            .then((res) => res.json())
+            .then((project) => {
+                setProject(project);
+                setloading(false);
+            });
+    }, []);
     return (
         <div className="project_categories_area ">
             <div className="right_text">
