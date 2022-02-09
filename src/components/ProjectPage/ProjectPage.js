@@ -4,6 +4,7 @@ import Projects from "./Projects/Projects";
 
 const ProjectPage = () => {
     const [allproject, setProject] = useState([]);
+    const [allfilterProject, setfilterProject] = useState([]);
     const [loading, setloading] = useState([true]);
 
     //fetch  ServerProject
@@ -13,6 +14,7 @@ const ProjectPage = () => {
             .then((res) => res.json())
             .then((project) => {
                 setProject(project);
+                setfilterProject(project);
                 setloading(false);
             });
     }, []);
@@ -21,7 +23,7 @@ const ProjectPage = () => {
         const updateProject = allproject.filter((item) => {
             return item.project_categories == categ;
         });
-        setProject(updateProject);
+        setfilterProject(updateProject);
     };
     return (
         <div className="post_details sticky_top_gap">
@@ -31,7 +33,7 @@ const ProjectPage = () => {
                         <div className="col-lg-8">
                             <div className="ads728_90"></div>
                             <Projects
-                                allproject={allproject}
+                                allproject={allfilterProject}
                                 loading={loading}
                             ></Projects>
                             <div className="ads728_90"></div>
@@ -40,7 +42,7 @@ const ProjectPage = () => {
                             <div className="blog_right_site ml_20 mb_10">
                                 <div className="ads320_50"></div>
                                 <ProjectCategories
-                                    filterProject={filterProject}
+                                    filterProject={(e) => filterProject(e)}
                                 ></ProjectCategories>
                             </div>
                         </div>

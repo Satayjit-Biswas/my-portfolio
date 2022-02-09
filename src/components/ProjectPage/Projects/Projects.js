@@ -11,7 +11,7 @@ const Projects = (props) => {
             </h4>
             <div className="projects_area_box mb_20">
                 {allproject.map((e) => (
-                    <div className="project_item">
+                    <div className="project_item" key={e._id}>
                         <div className="project_item_img1">
                             <a href="#">
                                 <img src={e.img1} alt="" />
@@ -51,8 +51,7 @@ const Projects = (props) => {
                         </div>
                     </div>
                 ))}
-
-                <div className="project_item">
+                {/* <div className="project_item">
                     <div className="project_item_img1">
                         <a href="#">
                             <img src={img} alt="" />
@@ -84,40 +83,7 @@ const Projects = (props) => {
                             </a>
                         </div>
                     </div>
-                </div>
-                <div className="project_item">
-                    <div className="project_item_img1">
-                        <a href="#">
-                            <img src={img} alt="" />
-                        </a>
-                    </div>
-                    <div className="project_item_text">
-                        <div className="project_item_date">
-                            <p>
-                                Start Date :<span> 21/10/2021</span>
-                            </p>
-                            <p>
-                                End Date :<span> 30/10/2021</span>
-                            </p>
-                        </div>
-                        <h3 className="mt_15 mb_15">
-                            <a href="#">Bike Store e-commerce Website .</a>
-                        </h3>
-                        <p>
-                            This is an amazing bike store website. There are
-                            many variations of passages of Lorem Ipsum
-                            available, but the majority have suffered alteration
-                            in so....
-                        </p>
-                        <div className="post_read_more mt_20 mb_10">
-                            <a href="#" className="custom_btn">
-                                <span className="left_border"></span>
-                                details
-                                <span className="right_border"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );

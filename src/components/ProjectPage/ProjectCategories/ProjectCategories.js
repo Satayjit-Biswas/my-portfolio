@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from "react";
 
-const ProjectCategories = () => {
-    const [allproject, setProject] = useState([]);
+const ProjectCategories = (props) => {
+    const { filterProject } = props;
+    const [ProjectCategories, setProjectCategories] = useState([]);
     const [loading, setloading] = useState([true]);
 
     //fetch  ServerProject
-    const url = "http://localhost:5000/project";
+    const url = "http://localhost:5000/project_categories";
     useEffect(() => {
         fetch(url)
             .then((res) => res.json())
             .then((project) => {
-                setProject(project);
+                setProjectCategories(project);
                 setloading(false);
             });
     }, []);
@@ -21,22 +22,17 @@ const ProjectCategories = () => {
             </div>
             <div className="row">
                 <div className="col-6">
-                    <div className="categories_link">
-                        <i className="fal fa-long-arrow-right"></i>
-                        <a href="#">html 5</a>
-                    </div>
-                    <div className="categories_link">
-                        <i className="fal fa-long-arrow-right"></i>
-                        <a href="#">css 3</a>
-                    </div>
-                    <div className="categories_link">
-                        <i className="fal fa-long-arrow-right"></i>
-                        <a href="#">react</a>
-                    </div>
-                    <div className="categories_link">
-                        <i className="fal fa-long-arrow-right"></i>
-                        <a href="#">bootstrap</a>
-                    </div>
+                    {ProjectCategories.map((e) => (
+                        <div className="categories_link" key={e._id}>
+                            <i className="fal fa-long-arrow-right"></i>
+                            <a
+                                href="#"
+                                onClick={() => filterProject(e.categories)}
+                            >
+                                {e.categories}
+                            </a>
+                        </div>
+                    ))}
                 </div>
                 <div className="col-6">
                     <div className="ads160_600"></div>
