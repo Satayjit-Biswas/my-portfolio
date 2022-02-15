@@ -112,7 +112,7 @@ const ProjectDetails = () => {
                         <div className="col-lg-4">
                             <div className="blog_right_site ml_20 mb_10">
                                 <div className="ads320_50"></div>
-                                <ProjectCategories></ProjectCategories>
+                                {/* <ProjectCategories></ProjectCategories> */}
                             </div>
                         </div>
                     </div>

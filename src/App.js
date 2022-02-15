@@ -22,6 +22,8 @@ import AllQuestion from "./components/Admin/AllQuestion/AllQuestion";
 import AddQuestion from "./components/Admin/AddQusetion/AddQuestion";
 import AllProject from "./components/Admin/AllProject/AllProject";
 import AddProject from "./components/Admin/AddProject/AddProject";
+import AllBlog from "./components/Admin/AllBlog/AllBlog";
+import AddBlog from "./components/Admin/AddBlog/AddBlog";
 const App = () => {
     return (
         <div>
@@ -30,12 +32,12 @@ const App = () => {
                 <Route path="/" element={<Home />}></Route>
                 <Route path="servicepage" element={<ServicePage />}></Route>
                 <Route path="projectpage" element={<ProjectPage />}></Route>
-                <Route path="blogpage" element={<BlogPage />}></Route>
-                <Route path="postdetails" element={<PostDetails />}></Route>
                 <Route
-                    path="projectdetails"
+                    path="projectpage/projectdetails/:id"
                     element={<ProjectDetails />}
                 ></Route>
+                <Route path="blogpage" element={<BlogPage />}></Route>
+                <Route path="postdetails" element={<PostDetails />}></Route>
                 <Route path="contactpage" element={<ContactPage />}></Route>
                 <Route path="loginpage" element={<LoginPage />}></Route>
                 <Route path="registerpage" element={<RegisterPage />}></Route>
@@ -50,6 +52,9 @@ const App = () => {
                     {/* service  */}
                     <Route path="allproject" element={<AllProject />}></Route>
                     <Route path="addproject" element={<AddProject />}></Route>
+                    {/* blog  */}
+                    <Route path="allblog" element={<AllBlog />}></Route>
+                    <Route path="addblog" element={<AddBlog />}></Route>
                     {/* user  */}
                     <Route path="alluser" element={<Alluser />}></Route>
                 </Route>

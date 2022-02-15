@@ -28,6 +28,14 @@ const DeshboardMenu = () => {
             const icon_rotate = document.querySelector(".project_menu");
             icon_rotate.classList.toggle("rotate");
         });
+        const click_blog = document.querySelector(".blog_menu");
+        click_blog.addEventListener("click", () => {
+            const add_drop_down_class =
+                document.querySelector(".blog_drop_menu");
+            add_drop_down_class.classList.toggle("show_drop_menu");
+            const icon_rotate = document.querySelector(".blog_menu");
+            icon_rotate.classList.toggle("rotate");
+        });
     }, []);
     return (
         <div className="DeshboardMenu">
@@ -75,7 +83,19 @@ const DeshboardMenu = () => {
                     </div>
                 </li>
                 <li>
-                    <a href="#">blog</a>
+                    <a href="#" className="DeshboardMenu_dropdown blog_menu">
+                        My Blog
+                    </a>
+                    <div className="DeshboardMenu_dropdown_menu blog_drop_menu">
+                        <ul>
+                            <li>
+                                <Link to="allblog">All Blog</Link>
+                            </li>
+                            <li>
+                                <Link to="addblog">Add Blog</Link>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
                 <li>
                     <a href="#" className="DeshboardMenu_dropdown user_menu">
