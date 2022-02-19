@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Outlet } from "react-router-dom";
 import ProjectCategories from "./ProjectCategories/ProjectCategories";
 import Projects from "./Projects/Projects";
 
@@ -26,7 +25,6 @@ const ProjectPage = () => {
         });
         setfilterProject(updateProject);
     };
-    console.log(Outlet);
     return (
         <div className="post_details sticky_top_gap">
             <div className="container">
@@ -38,7 +36,6 @@ const ProjectPage = () => {
                                 allproject={allfilterProject}
                                 loading={loading}
                             ></Projects>
-                            <Outlet></Outlet>
                             <div className="ads728_90"></div>
                         </div>
                         <div className="col-lg-4">

@@ -1,8 +1,17 @@
-import React from "react";
-import ProjectCategories from "../ProjectCategories/ProjectCategories";
-import img from "../../../assets/img/bg1.jpg";
+import React,{ useEffect,useState } from "react";
 import "./ProjectDetails.css";
+import { useParams } from "react-router-dom";
+
+
 const ProjectDetails = () => {
+    const {id} = useParams();
+    const [GetProject,setGetProject] =useState({});
+    useEffect(() => {
+        fetch(`http://localhost:5000/project/${id}`)
+            .then(res => res.json())
+            .then(data => setGetProject(data))
+    },[id])
+    const {project_title,project_categories,description1,description2,description3,img1,img2,img3,project_client_link,project_live_link,project_server_link,project_using,project_youtube_link} = GetProject;
     return (
         <div className="project_details sticky_top_gap">
             <div className="container">
@@ -10,101 +19,49 @@ const ProjectDetails = () => {
                     <div className="row">
                         <div className="col-lg-8">
                             <div className="ads728_90"></div>
-                            <h3 className="">Bike Store e-commerce Website</h3>
+                            <h3 className="">{project_title}</h3>
                             <div className="project_details_img my-3">
-                                <img src={img} alt="" srcSet="" />
+                                <img src={img1} alt="" srcSet="" />
                             </div>
                             <h5>Which has been used in the project :</h5>
                             <p>
-                                Bootstrap 5.x , Fontawesome , React , Node.js,
-                                Firebase ,Mongodb
+                                {project_using}
                             </p>
                             <h5>Description This Project :</h5>
                             <p>
-                                This is an amazing bike store website. There are
-                                many variations of passages of Lorem Ipsum
-                                available, but the majority have suffered
-                                alteration in some form, by injected humour, or
-                                randomised words which don't look even slightly
-                                believable. If you are going to use a passage of
-                                Lorem Ipsum, you need to be sure there isn't
-                                anything embarrassing hidden in the middle of
-                                text. All the Lorem Ipsum generators on the
-                                Internet tend to repeat predefined chunks as
-                                necessary, making this the first true generator
-                                on the Internet. It uses a dictionary of over
-                                200 Latin words, combined with a handful of
-                                model sentence structures, to generate Lorem
-                                Ipsum which looks reasonable. The generated
-                                Lorem Ipsum is therefore always free from
-                                repetition, injected humour, or
-                                non-characteristic words etc.
+                                {description1}
                             </p>
                             <div className="ads728_90"></div>
                             <div className="project_details_img my-5">
-                                <img src={img} alt="" srcSet="" />
+                                <img src={img2} alt="" srcSet="" />
                             </div>
                             <p>
-                                This is an amazing bike store website. There are
-                                many variations of passages of Lorem Ipsum
-                                available, but the majority have suffered
-                                alteration in some form, by injected humour, or
-                                randomised words which don't look even slightly
-                                believable. If you are going to use a passage of
-                                Lorem Ipsum, you need to be sure there isn't
-                                anything embarrassing hidden in the middle of
-                                text. All the Lorem Ipsum generators on the
-                                Internet tend to repeat predefined chunks as
-                                necessary, making this the first true generator
-                                on the Internet. It uses a dictionary of over
-                                200 Latin words, combined with a handful of
-                                model sentence structures, to generate Lorem
-                                Ipsum which looks reasonable. The generated
-                                Lorem Ipsum is therefore always free from
-                                repetition, injected humour, or
-                                non-characteristic words etc.
+                                {description2}
                             </p>
                             <div className="ads728_90"></div>
                             <div className="project_details_img my-5">
-                                <img src={img} alt="" srcSet="" />
+                                <img src={img3} alt="" srcSet="" />
                             </div>
                             <p className="mb_20">
-                                This is an amazing bike store website. There are
-                                many variations of passages of Lorem Ipsum
-                                available, but the majority have suffered
-                                alteration in some form, by injected humour, or
-                                randomised words which don't look even slightly
-                                believable. If you are going to use a passage of
-                                Lorem Ipsum, you need to be sure there isn't
-                                anything embarrassing hidden in the middle of
-                                text. All the Lorem Ipsum generators on the
-                                Internet tend to repeat predefined chunks as
-                                necessary, making this the first true generator
-                                on the Internet. It uses a dictionary of over
-                                200 Latin words, combined with a handful of
-                                model sentence structures, to generate Lorem
-                                Ipsum which looks reasonable. The generated
-                                Lorem Ipsum is therefore always free from
-                                repetition, injected humour, or
-                                non-characteristic words etc.
+                                {description3}
                             </p>
                             <div className="ads728_90"></div>
                             <div className="project_link mb_10">
                                 <h5>Project live Link :</h5>
-                                <a href="#">
-                                    https://bike-store-a5d20.web.app/
+                                <a target="blank" href={project_live_link}>
+                                    {project_live_link}
                                 </a>
                                 <h5>Project Client Link :</h5>
-                                <a href="https://bike-store-a5d20.web.app/">
-                                    https://bike-store-a5d20.web.app/
+                                <a target="blank" href={project_client_link}>
+                                    {project_client_link}
                                 </a>
                                 <h5>Project Server Link :</h5>
-                                <a href="https://github.com/Satayjit-Biswas/P.hero-Project-12-Server-Site-Bike-Store">
-                                    https://github.com/Satayjit-Biswas/P.hero-Project-12-Server-Site-Bike-Store
+                                <a target="blank" href={project_server_link}>
+                                    {project_server_link}
                                 </a>
                                 <h5>Project Youtube Link :</h5>
-                                <a href="https://github.com/Satayjit-Biswas/P.hero-Project-12-Server-Site-Bike-Store">
-                                    https://github.com/Satayjit-Biswas/P.hero-Project-12-Server-Site-Bike-Store
+                                <a target="blank" href={project_youtube_link}>
+                                    {project_youtube_link}
                                 </a>
                             </div>
                             <div className="ads728_90"></div>

@@ -8,8 +8,12 @@ const AddBlog = () => {
     const { userrole } = useFirebase();
     const editor = useRef(null);
     const [BlogDescription, setBlogDescription] = useState("");
+    const d = new Date();
+    let datetime = d.toLocaleString();
     const [blogData, setBlogData] = useState({
         blog_title: "",
+        blog_img: "",
+        blog_date: `${datetime}`,
         blog_categories: "",
         blog_conclusion: "",
         blog_description: "",
@@ -48,6 +52,8 @@ const AddBlog = () => {
             }).then((res) => {
                 setBlogData({
                     blog_title: "",
+                    blog_img: "",
+                    blog_date: `${datetime}`,
                     blog_categories: "",
                     blog_conclusion: "",
                 });
@@ -73,7 +79,7 @@ const AddBlog = () => {
                                 <input
                                     name="blog_title"
                                     type="text"
-                                    placeholder="blog Title"
+                                    placeholder="Blog Title"
                                     className="inputbox"
                                     value={blogData.blog_title}
                                     required
@@ -84,11 +90,32 @@ const AddBlog = () => {
                                 <input
                                     name="blog_categories"
                                     type="text"
-                                    placeholder="blog Categories"
+                                    placeholder="Blog Categories"
                                     className="inputbox"
                                     value={blogData.blog_categories}
                                     required
                                     onChange={InputEvent}
+                                />
+                            </div>
+                            <div className="col-md-8">
+                                <input
+                                    name="blog_img"
+                                    type="text"
+                                    placeholder="Blog Img Link"
+                                    className="inputbox"
+                                    value={blogData.blog_img}
+                                    required
+                                    onChange={InputEvent}
+                                />
+                            </div>
+                            <div className="col-md-4">
+                                <input
+                                    name="blog_date"
+                                    type="text"
+                                    className="inputbox"
+                                    value={blogData.blog_date}
+                                    onChange={InputEvent}
+                                    readOnly
                                 />
                             </div>
                             <div className="col-12">
