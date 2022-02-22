@@ -1,6 +1,7 @@
 import React from "react";
 import img from "../../../assets/img/img_5.jpg";
 import "./Post.css";
+import SinglePost from "./SinglePost";
 const Post = (props) => {
     const { allblog, loading } = props;
 
@@ -10,62 +11,7 @@ const Post = (props) => {
                 <span className="text_tb_line">All post</span>
             </h4>
             {allblog.map((e) => (
-                <div className="post_area_box">
-                    <div className="row align-items-center">
-                        <div className="col-lg-5">
-                            <div className="post_img">
-                                <a href="#">
-                                    <img
-                                        src={e.blog_img}
-                                        alt=""
-                                        className="img-fluid"
-                                    />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="col-lg-7">
-                            <h2 className="post_title">
-                                <a href="#">{e.blog_title}</a>
-                            </h2>
-                            <div className="post_date mt_5 mb_5">
-                                {e.blog_date}
-                            </div>
-                            <div className="post_details mb_10">
-                                <p
-                                    dangerouslySetInnerHTML={{
-                                        __html: e.blog_description,
-                                    }}
-                                ></p>
-                            </div>
-                            <div className="post_read_more">
-                                <a href="#" className="custom_btn">
-                                    <span className="left_border"></span> read
-                                    more
-                                    <span className="right_border"></span>
-                                </a>
-                            </div>
-                            <div className="post_icon mt_10">
-                                <div className="post_icon_box">
-                                    <a href="#" target="_blank">
-                                        <i className="fab fa-youtube"></i>
-                                    </a>
-                                    <a href="#" target="_blank">
-                                        <i className="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="#" target="_blank">
-                                        <i className="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="#" target="_blank">
-                                        <i className="fab fa-instagram"></i>
-                                    </a>
-                                    <a href="#" target="_blank">
-                                        <i className="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <SinglePost key={e._id} blog={e}></SinglePost>
             ))}
             {/* <div className="post_area_box">
                 <div className="row align-items-center">

@@ -37,6 +37,7 @@
 }
 .post_date {
     color: rgb(102, 101, 101);
+    text-transform: capitalize;
 }
 .post_read_more .custom_btn {
     padding: 6px 20px;

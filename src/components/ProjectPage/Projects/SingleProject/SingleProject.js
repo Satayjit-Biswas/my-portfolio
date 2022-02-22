@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 const SingleProject = (props) => {
     const { _id, img1, project_categories, project_title } = props.projects;
     const navigate = useNavigate();
-    const productDetals = () => {
+    const projectDetals = () => {
         navigate(`projectdetails/${_id}`);
     };
     return (
@@ -29,7 +29,7 @@ const SingleProject = (props) => {
                     </p>
                 </div>
                 <h3 className="mt_5 mb_15">
-                    <span onClick={productDetals}>{project_title}</span>
+                    <span onClick={projectDetals}>{project_title}</span>
                 </h3>
                 <p>
                     This is an amazing bike store website. There are many
@@ -37,7 +37,7 @@ const SingleProject = (props) => {
                     majority have suffered alteration in so....
                 </p>
                 <div className="post_read_more mt_20 mb_10">
-                    <button onClick={productDetals} className="custom_btn">
+                    <button onClick={projectDetals} className="custom_btn">
                         <span className="left_border"></span>
                         details
                         <span className="right_border"></span>

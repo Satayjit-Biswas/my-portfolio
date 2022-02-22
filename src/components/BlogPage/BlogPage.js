@@ -3,8 +3,6 @@ import Post from "./Post/Post";
 import "./BlogPage.css";
 import RecentPost from "./RecentPost/RecentPost";
 import Categories from "./Categories/Categories";
-import { Outlet } from "react-router-dom";
-
 
 const BlogPage = () => {
     const [allblog, setBlog] = useState([]);
@@ -29,7 +27,6 @@ const BlogPage = () => {
         });
         setFilterBlog(updateblog);
     };
-    console.log(Outlet);
     return (
         <div className="blog_area sticky_top_gap">
             <div className="container">
@@ -37,8 +34,10 @@ const BlogPage = () => {
                     <div className="row">
                         <div className="col-lg-8">
                             <div className="ads728_90"></div>
-                            <Post allblog={allfilterblog}
-                                loading={loading}></Post>
+                            <Post
+                                allblog={allfilterblog}
+                                loading={loading}
+                            ></Post>
                             <div className="ads728_90"></div>
                         </div>
                         <div className="col-lg-4">
@@ -46,7 +45,9 @@ const BlogPage = () => {
                                 <div className="ads320_50"></div>
                                 <RecentPost></RecentPost>
                                 <div className="ads336_280"></div>
-                                <Categories filterblog={(e) => filterblog(e)}></Categories>
+                                <Categories
+                                    filterBlog={(e) => filterblog(e)}
+                                ></Categories>
                             </div>
                         </div>
                     </div>
