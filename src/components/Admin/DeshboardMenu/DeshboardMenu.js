@@ -79,6 +79,11 @@ const DeshboardMenu = () => {
                             <li>
                                 <Link to="addproject">Add project</Link>
                             </li>
+                            <li>
+                                <Link to="allprojectcategories">
+                                    Project Categories
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </li>
@@ -93,6 +98,11 @@ const DeshboardMenu = () => {
                             </li>
                             <li>
                                 <Link to="addblog">Add Blog</Link>
+                            </li>
+                            <li>
+                                <Link to="allblogcategories">
+                                    Blog Categories
+                                </Link>
                             </li>
                         </ul>
                     </div>

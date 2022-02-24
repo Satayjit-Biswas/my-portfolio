@@ -3,7 +3,7 @@ import "./Projects.css";
 import SingleProject from "./SingleProject/SingleProject";
 
 const Projects = (props) => {
-    const { allproject, loading } = props;
+    const { allproject } = props;
     return (
         <div className="projects_area">
             <h4 className="text-center mb_30 mt_20">

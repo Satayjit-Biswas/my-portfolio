@@ -9,6 +9,11 @@ const SinglePost = (props) => {
         blog_categories,
         blog_date,
         blog_conclusion,
+        blog_youtube_link,
+        blog_fb_link,
+        blog_twitter_link,
+        blog_instagram_link,
+        blog_github_link,
     } = props.blog;
     const navigate = useNavigate();
     const BlogDetals = () => {
@@ -47,19 +52,19 @@ const SinglePost = (props) => {
                     </div>
                     <div className="post_icon mt_10">
                         <div className="post_icon_box">
-                            <a href="#" target="_blank">
+                            <a href={blog_youtube_link} target="_blank">
                                 <i className="fab fa-youtube"></i>
                             </a>
-                            <a href="#" target="_blank">
+                            <a href={blog_fb_link} target="_blank">
                                 <i className="fab fa-facebook-f"></i>
                             </a>
-                            <a href="#" target="_blank">
+                            <a href={blog_twitter_link} target="_blank">
                                 <i className="fab fa-twitter"></i>
                             </a>
-                            <a href="#" target="_blank">
+                            <a href={blog_instagram_link} target="_blank">
                                 <i className="fab fa-instagram"></i>
                             </a>
-                            <a href="#" target="_blank">
+                            <a href={blog_github_link} target="_blank">
                                 <i className="fab fa-github"></i>
                             </a>
                         </div>

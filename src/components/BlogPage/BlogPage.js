@@ -34,10 +34,24 @@ const BlogPage = () => {
                     <div className="row">
                         <div className="col-lg-8">
                             <div className="ads728_90"></div>
-                            <Post
-                                allblog={allfilterblog}
-                                loading={loading}
-                            ></Post>
+                            {loading ? (
+                                <div className="text-center mt_30 mb_30">
+                                    <div
+                                        class="spinner-border text-warning"
+                                        role="status"
+                                    >
+                                        <span class="visually-hidden">
+                                            Loading...
+                                        </span>
+                                    </div>
+                                </div>
+                            ) : (
+                                <Post
+                                    allblog={allfilterblog}
+                                    loading={loading}
+                                ></Post>
+                            )}
+
                             <div className="ads728_90"></div>
                         </div>
                         <div className="col-lg-4">

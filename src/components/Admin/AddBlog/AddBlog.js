@@ -3,6 +3,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import useFirebase from "../../../hooks/useFirebase";
 import JoditEditor from "jodit-react";
+import "./AddBlog.css";
 
 const AddBlog = () => {
     const { userrole } = useFirebase();
@@ -16,6 +17,11 @@ const AddBlog = () => {
         blog_date: `${datetime}`,
         blog_categories: "",
         blog_conclusion: "",
+        blog_youtube_link: "",
+        blog_fb_link: "",
+        blog_twitter_link: "",
+        blog_instagram_link: "",
+        blog_github_link: "",
         blog_description: "",
     });
     useEffect(() => {
@@ -56,6 +62,11 @@ const AddBlog = () => {
                     blog_date: `${datetime}`,
                     blog_categories: "",
                     blog_conclusion: "",
+                    blog_youtube_link: "",
+                    blog_fb_link: "",
+                    blog_twitter_link: "",
+                    blog_instagram_link: "",
+                    blog_github_link: "",
                 });
                 setBlogDescription("");
                 toast.success("Add blog");
@@ -128,6 +139,61 @@ const AddBlog = () => {
                                     onChange={InputEvent}
                                 ></textarea>
                             </div>
+                            <div className="col-md-12">
+                                <input
+                                    name="blog_youtube_link"
+                                    type="text"
+                                    placeholder="Blog Youtube Link"
+                                    className="inputbox"
+                                    value={blogData.blog_youtube_link}
+                                    required
+                                    onChange={InputEvent}
+                                />
+                            </div>
+                            <div className="col-md-6">
+                                <input
+                                    name="blog_fb_link"
+                                    type="text"
+                                    placeholder="Blog Fb Link"
+                                    className="inputbox"
+                                    value={blogData.blog_fb_link}
+                                    required
+                                    onChange={InputEvent}
+                                />
+                            </div>
+                            <div className="col-md-6">
+                                <input
+                                    name="blog_twitter_link"
+                                    type="text"
+                                    placeholder="Blog Twitter Link"
+                                    className="inputbox"
+                                    value={blogData.blog_twitter_link}
+                                    required
+                                    onChange={InputEvent}
+                                />
+                            </div>
+                            <div className="col-md-6">
+                                <input
+                                    name="blog_instagram_link"
+                                    type="text"
+                                    placeholder="Blog Instagram Link"
+                                    className="inputbox"
+                                    value={blogData.blog_instagram_link}
+                                    required
+                                    onChange={InputEvent}
+                                />
+                            </div>
+                            <div className="col-md-6">
+                                <input
+                                    name="blog_github_link"
+                                    type="text"
+                                    placeholder="Blog Github Link"
+                                    className="inputbox"
+                                    value={blogData.blog_github_link}
+                                    required
+                                    onChange={InputEvent}
+                                />
+                            </div>
                             <div className="col-12">
                                 <JoditEditor
                                     ref={editor}
@@ -137,7 +203,7 @@ const AddBlog = () => {
                                     onChange={(e) => setBlogDescription(e)}
                                 />
                             </div>
-                            <div className="col-12 text-center">
+                            <div className="col-12 text-center mt_30">
                                 <p id="my-form-status"></p>
                                 <button
                                     type="submit"

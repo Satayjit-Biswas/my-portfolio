@@ -32,10 +32,22 @@ const ProjectPage = () => {
                     <div className="row">
                         <div className="col-lg-8">
                             <div className="ads728_90"></div>
-                            <Projects
-                                allproject={allfilterProject}
-                                loading={loading}
-                            ></Projects>
+                            {loading ? (
+                                <div className="text-center mt_30 mb_30">
+                                    <div
+                                        class="spinner-border text-warning"
+                                        role="status"
+                                    >
+                                        <span class="visually-hidden">
+                                            Loading...
+                                        </span>
+                                    </div>
+                                </div>
+                            ) : (
+                                <Projects
+                                    allproject={allfilterProject}
+                                ></Projects>
+                            )}
                             <div className="ads728_90"></div>
                         </div>
                         <div className="col-lg-4">

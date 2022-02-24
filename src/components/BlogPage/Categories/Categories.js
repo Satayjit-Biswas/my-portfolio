@@ -24,17 +24,28 @@ const Categories = (props) => {
             </div>
             <div className="row">
                 <div className="col-6">
-                    {BlogCategories.map((e) => (
-                        <div className="categories_link" key={e._id}>
-                            <i className="fal fa-long-arrow-right"></i>
-                            <a
-                                href="#"
-                                onClick={() => filterBlog(e.categories)}
+                    {loading ? (
+                        <div className="text-center mt_30 mb_30">
+                            <div
+                                class="spinner-border text-warning"
+                                role="status"
                             >
-                                {e.categories}
-                            </a>
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
                         </div>
-                    ))}
+                    ) : (
+                        BlogCategories.map((e) => (
+                            <div className="categories_link" key={e._id}>
+                                <i className="fal fa-long-arrow-right"></i>
+                                <a
+                                    href="#"
+                                    onClick={() => filterBlog(e.categories)}
+                                >
+                                    {e.categories}
+                                </a>
+                            </div>
+                        ))
+                    )}
                 </div>
                 <div className="col-6">
                     <div className="ads160_600"></div>
