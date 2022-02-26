@@ -9,8 +9,14 @@ const HomeAbout = () => {
                 <div className="about">
                     <div className="row justify-content-center align-items-center">
                         <div className="col-lg-4 col-md-12 img-middle">
-                            <div className="about-img">
-                                <img src={img} alt="" className="img-fluid" />
+                            <div className="about-img-wap">
+                                <div className="about-img">
+                                    <img
+                                        src={img}
+                                        alt=""
+                                        className="img-fluid"
+                                    />
+                                </div>
                             </div>
                         </div>
                         <div className="col-lg-7 col-md-12">

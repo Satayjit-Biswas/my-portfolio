@@ -3,7 +3,7 @@ import img from "../../../assets/img/img_5.jpg";
 import "./Post.css";
 import SinglePost from "./SinglePost";
 const Post = (props) => {
-    const { allblog, loading } = props;
+    const { allblog } = props;
 
     return (
         <div className="post_area ">

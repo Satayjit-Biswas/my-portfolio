@@ -21,15 +21,9 @@ const Dashboard = () => {
                 </div>
                 <div className="dashboard_menu">
                     <div className="dashboard_member_address">
-                        <h5>
-                            Name : <span>Satayjit biswas</span>
-                        </h5>
-                        <h5>
-                            Role :<span>Admin</span>
-                        </h5>
-                    </div>
-                    <div className="DeshboardMenu_icon">
-                        <i className="fal fa-home"></i>
+                        <div className="DeshboardMenu_icon">
+                            <i className="fal fa-home"></i>
+                        </div>
                     </div>
                     <DeshboardMenu></DeshboardMenu>
                 </div>

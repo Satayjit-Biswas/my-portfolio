@@ -25,8 +25,8 @@ const RecentPost = () => {
             </div>
             {loading ? (
                 <div className="text-center mt_30 mb_30">
-                    <div class="spinner-border text-warning" role="status">
-                        <span class="visually-hidden">Loading...</span>
+                    <div className="spinner-border text-warning" role="status">
+                        <span className="visually-hidden">Loading...</span>
                     </div>
                 </div>
             ) : (

@@ -22,6 +22,8 @@
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+    line-height: 24px;
+    display: inline-block;
 }
 
 .blog-details h3 a:hover {

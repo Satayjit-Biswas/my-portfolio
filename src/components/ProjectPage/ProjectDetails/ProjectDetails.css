@@ -1,6 +1,6 @@
 .project_details_img img{
     width: 100%;
-    height: 520px;
+    max-height: 50vh;
     object-fit: cover;
 }
 .project_details_box h3{

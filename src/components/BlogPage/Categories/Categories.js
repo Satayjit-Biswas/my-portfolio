@@ -23,14 +23,16 @@ const Categories = (props) => {
                 <h3>CATEGORIES</h3>
             </div>
             <div className="row">
-                <div className="col-6">
+                <div className="col-md-6 col-4">
                     {loading ? (
                         <div className="text-center mt_30 mb_30">
                             <div
-                                class="spinner-border text-warning"
+                                className="spinner-border text-warning"
                                 role="status"
                             >
-                                <span class="visually-hidden">Loading...</span>
+                                <span className="visually-hidden">
+                                    Loading...
+                                </span>
                             </div>
                         </div>
                     ) : (
@@ -47,8 +49,13 @@ const Categories = (props) => {
                         ))
                     )}
                 </div>
-                <div className="col-6">
-                    <div className="ads160_600"></div>
+                <div className="col-md-6 col-8">
+                    <div className="d-flex justify-content-center">
+                        <div className="ads160_600"></div>
+                        <div className="ads336_280"></div>
+                        <div className="ads320_100"></div>
+                        <div className="ads200_200"></div>
+                    </div>
                 </div>
             </div>
         </div>

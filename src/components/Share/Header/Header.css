@@ -94,7 +94,7 @@ header.sticky {
     margin: 5px 0;
 }
 .login_icon {
-    margin-left: 20px;
+    margin-left: 10px;
     position: relative;
 }
 .login_icon img{
@@ -113,7 +113,7 @@ header.sticky {
 }
 .login_menu{
     position: absolute;
-    width: 150px;
+    width: 130px;
     background-color: #252525;
     left: 50%;
     transform: translateX(-50%);

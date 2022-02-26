@@ -70,7 +70,7 @@ const LoginPage = () => {
                                     {error}
                                 </p>
                                 <p className="mt_25 mb_5">
-                                    <span>Login</span>
+                                    <span>Login With</span>
                                     <span
                                         className="login_icon"
                                         onClick={signInUsingGoogle}

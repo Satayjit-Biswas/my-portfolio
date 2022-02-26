@@ -1,5 +1,6 @@
 .recentpost_area_box{
     display: flex;
+    align-items: center;
     margin-bottom: 15px;
 }
 .recentpost_img img{

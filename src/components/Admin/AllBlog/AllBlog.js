@@ -53,10 +53,12 @@ const Allblog = () => {
                     {loading ? (
                         <div className="text-center mt_30">
                             <div
-                                class="spinner-border text-warning"
+                                className="spinner-border text-warning"
                                 role="status"
                             >
-                                <span class="visually-hidden">Loading...</span>
+                                <span className="visually-hidden">
+                                    Loading...
+                                </span>
                             </div>
                         </div>
                     ) : (

@@ -151,7 +151,7 @@ p {
     line-height: 24px;
     margin: 2px;
 }
-.sticky_top_gap{
+.sticky_top_gap {
     padding-top: 80px;
 }
 .text_tb_line {
@@ -176,7 +176,7 @@ ol,
 ul {
     list-style: none;
 }
-a{
+a {
     text-decoration: none;
 }
 a:hover {
@@ -189,28 +189,185 @@ input:focus,
 textarea:focus {
     outline: none;
 }
-.spinner-border{
+.spinner-border {
     width: 55px;
     height: 55px;
 }
 /* for google ads  */
-.ads728_90{
+.ads728_90 {
+    display: none;
     width: 728px;
-    height:90px;
-    background-color: rgb(116, 116, 116);
+    height: 90px;
+    background-color: rgba(100, 100, 100, 0.74);
 }
-.ads336_280{
+.ads336_280 {
     width: 336px;
-    height:280px;
+    display: none;
+    height: 280px;
     background-color: rgb(116, 116, 116);
 }
-.ads160_600{
+.ads468_60 {
+    width: 468px;
+    display: none;
+    height: 60px;
+    background-color: rgb(116, 116, 116);
+}
+.ads160_600 {
     width: 160px;
-    height:600px;
+    display: none;
+    height: 600px;
     background-color: rgb(116, 116, 116);
 }
-.ads320_50{
+.ads320_50 {
     width: 320px;
-    height:50px;
+    display: none;
+    height: 50px;
     background-color: rgb(116, 116, 116);
+}
+.ads320_100 {
+    width: 320px;
+    display: none;
+
+    height: 100px;
+    background-color: rgb(116, 116, 116);
+}
+.ads300_250 {
+    width: 300px;
+    display: none;
+
+    height: 250px;
+    background-color: rgb(116, 116, 116);
+}
+.ads250_250 {
+    width: 250px;
+    display: none;
+
+    height: 250px;
+    background-color: rgb(116, 116, 116);
+}
+.ads234_60 {
+    width: 234px;
+    height: 60px;
+    display: none;
+
+    background-color: rgb(116, 116, 116);
+}
+.ads200_200 {
+    width: 200px;
+    height: 200px;
+    display: none;
+    background-color: rgb(116, 116, 116);
+}
+
+@media (min-width: 1200px) {
+    /*-------------------- project and blog page --------------- */
+    /* blog_left_site */
+    .blog_left_site .ads468_60,
+    .blog_left_site .ads320_100 {
+        display: none;
+    }
+    /* blog_right_site */
+    .blog_right_site .ads468_60,
+    .blog_right_site .ads320_100,
+    .blog_right_site .ads250_250 {
+        display: none;
+    }
+    .blog_right_site .ads336_280,
+    .blog_right_site .ads320_100,
+    .blog_right_site .ads200_200 {
+        display: none;
+    }
+}
+@media (max-width: 1199.98px) {
+    /*-------------------- project and blog page --------------- */
+    /* blog_left_site  */
+    .blog_left_site .ads728_90,
+    .blog_left_site .ads320_100 {
+        display: none;
+    }
+    /* blog_right_site */
+    .blog_right_site .ads468_60,
+    .blog_right_site .ads320_50,
+    .blog_right_site .ads320_100 {
+        display: none;
+    }
+    .blog_right_site .ads336_280,
+    .blog_right_site .ads320_100,
+    .blog_right_site .ads200_200 {
+        display: none;
+    }
+}
+@media (max-width: 991.98px) {
+    /*-------------------- project and blog page --------------- */
+    /* blog_left_site */
+    .blog_left_site .ads468_60 {
+        display: none;
+    }
+    .blog_left_site .ads728_90 {
+        display: block;
+    }
+    /* blog_right_site */
+    .blog_right_site .ads250_250 {
+        display: none;
+    }
+    /* blog_right_site */
+    .blog_right_site .ads160_600 {
+        display: none;
+    }
+    .blog_right_site .ads336_280 {
+        display: block;
+    }
+    /* project details page  */
+    .project_details .blog_right_site .ads160_600 {
+        display: block;
+    }
+    .project_details .blog_right_site .ads336_280 {
+        display: none;
+    }
+}
+
+/*Medium devices (tablets, 767px and down)*/
+@media (max-width: 767.98px) {
+    /*-------------------- project and blog page --------------- */
+    /* blog_left_site */
+    .blog_left_site .ads468_60 {
+        display: block;
+    }
+    .blog_left_site .ads728_90 {
+        display: none;
+    }
+    /* project details page  */
+    .project_details .blog_right_site .ads160_600 {
+        display: none;
+    }
+}
+
+/*Small devices (landscape phones, 575px and down)*/
+@media (max-width: 549.98px) {
+    /* blog_right_site */
+    .blog_right_site .ads160_600,
+    .blog_right_site .ads336_280 {
+        display: none;
+    }
+    .blog_right_site .ads336_280 {
+        display: none;
+    }
+
+    .blog_right_site .ads200_200 {
+        display: block;
+    }
+    /* project details page  */
+    .project_details .blog_right_site .ads200_200 {
+        display: none;
+    }
+}
+@media (max-width: 499.98px) {
+    .blog_left_site .ads468_60 {
+        display: none;
+    }
+    .blog_left_site .ads320_100 {
+        display: block;
+    }
+}
+@media (max-width: 330.98px) {
 }

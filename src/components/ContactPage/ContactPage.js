@@ -8,7 +8,7 @@ const ContactPage = () => {
             <div className="contact_page">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-6 col-lg-3">
+                        <div className="col-md-6 col-lg-3 col-6">
                             <div className="d-flex justify-content-center align-items-center">
                                 <div className="contact_address_box">
                                     <div className="contact_address_sub_box">
@@ -23,7 +23,7 @@ const ContactPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6 col-lg-3">
+                        <div className="col-md-6 col-lg-3 col-6">
                             <div className="d-flex justify-content-center align-items-center">
                                 <div className="contact_address_box">
                                     <div className="contact_address_sub_box">
@@ -47,7 +47,7 @@ const ContactPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6 col-lg-3">
+                        <div className="col-md-6 col-lg-3 col-6">
                             <div className="d-flex justify-content-center align-items-center">
                                 <div className="contact_address_box">
                                     <div className="contact_address_sub_box">
@@ -72,7 +72,7 @@ const ContactPage = () => {
                             </div>
                         </div>
 
-                        <div className="col-md-6 col-lg-3">
+                        <div className="col-md-6 col-lg-3 col-6">
                             <div className="d-flex justify-content-center align-items-center">
                                 <div className="contact_address_box">
                                     <div className="contact_address_sub_box">

@@ -10,7 +10,16 @@ const AddBlog = () => {
     const editor = useRef(null);
     const [BlogDescription, setBlogDescription] = useState("");
     const d = new Date();
-    let datetime = d.toLocaleString();
+    var options = {
+        weekday: "long",
+        year: "numeric",
+        month: "2-digit",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+    };
+
+    let datetime = d.toLocaleString("en-IN", options);
     const [blogData, setBlogData] = useState({
         blog_title: "",
         blog_img: "",

@@ -44,10 +44,10 @@ const Profile = () => {
                             ) : (
                                 <div className="text-center mt_20">
                                     <div
-                                        class="spinner-border text-warning"
+                                        className="spinner-border text-warning"
                                         role="status"
                                     >
-                                        <span class="visually-hidden">
+                                        <span className="visually-hidden">
                                             Loading...
                                         </span>
                                     </div>

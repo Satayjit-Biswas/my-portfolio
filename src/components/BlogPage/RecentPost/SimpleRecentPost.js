@@ -1,6 +1,5 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import img from "../../../assets/img/img_1.jpg";
 
 const SimpleRecentPost = (props) => {
     const {
@@ -12,7 +11,6 @@ const SimpleRecentPost = (props) => {
         blog_conclusion,
     } = props.blog;
     const navigate = useNavigate();
-    const location = useLocation();
     const BlogDetals = () => {
         navigate(`/postdetails/${_id}`);
     };
