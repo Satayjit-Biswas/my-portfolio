@@ -11,6 +11,7 @@ import {
     sendPasswordResetEmail,
     updateProfile,
 } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 initializeAuthentication();
 const useFirebase = () => {
@@ -38,6 +39,10 @@ const useFirebase = () => {
             });
     }, [user.email]);
     // create gmail user
+    const navigate = useNavigate();
+    const PushHomePage = () => {
+        navigate("/");
+    };
     const setUserName = (name) => {
         updateProfile(auth.currentUser, {
             displayName: name,
@@ -53,6 +58,7 @@ const useFirebase = () => {
                     setUserName(name);
                     UserServer(name, email, "POST");
                     setloading(false);
+                    PushHomePage();
                 })
                 .catch((err) => {
                     setError(err.message);

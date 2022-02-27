@@ -6,10 +6,9 @@ import "./RegisterPage.css";
 const RegisterPage = () => {
     const { createUserWithEmail, error, setError, user, setloading, loading } =
         useFirebase();
-    const [regname, setRegname] = useState(" ");
-    const [regemail, setEmail] = useState(" ");
-    const [regpass, setPass] = useState(" ");
-
+    const [regname, setRegname] = useState("");
+    const [regemail, setEmail] = useState("");
+    const [regpass, setPass] = useState("");
     const handleName = (e) => {
         setRegname(e.target.value);
     };
