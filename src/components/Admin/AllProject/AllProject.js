@@ -5,7 +5,7 @@ const AllProject = () => {
     const [allproject, setUserproject] = useState([]);
     const [loading, setloading] = useState([true]);
     //fetch  ServerUser
-    const url = "http://localhost:5000/project";
+    const url = "https://coderchefserver.herokuapp.com/project";
     useEffect(() => {
         fetch(url)
             .then((res) => res.json())
@@ -18,7 +18,7 @@ const AllProject = () => {
     const Deleteproject = (id) => {
         const sure = window.confirm("Are You Sure Delete Your project");
         if (sure) {
-            const url = `http://localhost:5000/project/${id}`;
+            const url = `https://coderchefserver.herokuapp.com/project/${id}`;
             fetch(url, {
                 method: "DELETE",
             })

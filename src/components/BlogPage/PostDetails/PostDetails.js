@@ -7,7 +7,7 @@ const PostDetails = () => {
     const [GetBlog, setGetBlog] = useState({});
     const [loading, setloading] = useState([true]);
     useEffect(() => {
-        fetch(`http://localhost:5000/blog/${id}`)
+        fetch(`https://coderchefserver.herokuapp.com/blog/${id}`)
             .then((res) => res.json())
             .then((data) => {
                 setGetBlog(data);

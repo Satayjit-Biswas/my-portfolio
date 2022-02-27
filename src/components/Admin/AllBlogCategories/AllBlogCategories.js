@@ -6,7 +6,7 @@ const AllBlogCategories = () => {
     const [AllBlogCategories, setAllBlogCategories] = useState([]);
     const [loading, setloading] = useState([true]);
     //fetch  Blog Categories
-    const url = "http://localhost:5000/blog_categories";
+    const url = "https://coderchefserver.herokuapp.com/blog_categories";
     useEffect(() => {
         fetch(url)
             .then((res) => res.json())
@@ -21,7 +21,7 @@ const AllBlogCategories = () => {
             "Are You Sure Delete Your blog categories...?"
         );
         if (sure) {
-            const url = `http://localhost:5000/blog_categories/${id}`;
+            const url = `https://coderchefserver.herokuapp.com/blog_categories/${id}`;
             fetch(url, {
                 method: "DELETE",
             })

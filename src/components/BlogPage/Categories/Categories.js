@@ -8,7 +8,7 @@ const Categories = (props) => {
     const [loading, setloading] = useState([true]);
 
     //fetch  ServerBlog
-    const url = "http://localhost:5000/blog_categories";
+    const url = "https://coderchefserver.herokuapp.com/blog_categories";
     useEffect(() => {
         fetch(url)
             .then((res) => res.json())

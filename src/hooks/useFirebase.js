@@ -25,7 +25,7 @@ const useFirebase = () => {
 
     // find user
     //fetch  SingleServerUser
-    const url = `http://localhost:5000/user/${user.email}`;
+    const url = `https://coderchefserver.herokuapp.com/user/${user.email}`;
     useEffect(() => {
         fetch(url)
             .then((res) => res.json())
@@ -115,7 +115,7 @@ const useFirebase = () => {
     // add to user in server
     const UserServer = (name, email, method) => {
         const adduser = { name: name, email: email, role: "member" };
-        fetch("http://localhost:5000/user", {
+        fetch("https://coderchefserver.herokuapp.com/user", {
             method: method,
             headers: {
                 "content-type": "application/json",

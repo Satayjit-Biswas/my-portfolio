@@ -6,7 +6,7 @@ const Allblog = () => {
     const [allblog, setUserblog] = useState([]);
     const [loading, setloading] = useState([true]);
     //fetch  ServerUser
-    const url = "http://localhost:5000/blog";
+    const url = "https://coderchefserver.herokuapp.com/blog";
     useEffect(() => {
         fetch(url)
             .then((res) => res.json())
@@ -19,7 +19,7 @@ const Allblog = () => {
     const Deleteblog = (id) => {
         const sure = window.confirm("Are You Sure Delete Your blog...?");
         if (sure) {
-            const url = `http://localhost:5000/blog/${id}`;
+            const url = `https://coderchefserver.herokuapp.com/blog/${id}`;
             fetch(url, {
                 method: "DELETE",
             })

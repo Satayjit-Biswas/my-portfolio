@@ -15,7 +15,7 @@ const ServicePage = () => {
     }, [loading]);
 
     //fetch  ServerUser
-    const url = "http://localhost:5000/question";
+    const url = "https://coderchefserver.herokuapp.com/question";
     useEffect(() => {
         fetch(url)
             .then((res) => res.json())

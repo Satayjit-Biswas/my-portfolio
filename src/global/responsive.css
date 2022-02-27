@@ -156,6 +156,10 @@
     .testimonial_area {
         padding: 0 10%;
     }
+    .login_icon {
+        margin-left: 0px;
+        display: inline-block;
+    }
     /*--------------------- Service Page ------------------*/
     .accordion-button {
         font-size: 14px;

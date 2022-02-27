@@ -5,7 +5,7 @@ const Alluser = () => {
     const [userdata, setUserdata] = useState([]);
     const [loading, setloading] = useState([true]);
     //fetch  ServerUser
-    const url = "http://localhost:5000/user";
+    const url = "https://coderchefserver.herokuapp.com/user";
     useEffect(() => {
         fetch(url)
             .then((res) => res.json())

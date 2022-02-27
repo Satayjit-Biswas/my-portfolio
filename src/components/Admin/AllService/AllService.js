@@ -5,7 +5,7 @@ const AllService = () => {
     const [allService, setUserService] = useState([]);
     const [loading, setloading] = useState([true]);
     //fetch  ServerUser
-    const url = "http://localhost:5000/service";
+    const url = "https://coderchefserver.herokuapp.com/service";
     useEffect(() => {
         fetch(url)
             .then((res) => res.json())
@@ -18,7 +18,7 @@ const AllService = () => {
     const DeleteService = (id) => {
         const sure = window.confirm("Are You Sure Delete Your Service");
         if (sure) {
-            const url = `http://localhost:5000/service/${id}`;
+            const url = `https://coderchefserver.herokuapp.com/service/${id}`;
             fetch(url, {
                 method: "DELETE",
             })

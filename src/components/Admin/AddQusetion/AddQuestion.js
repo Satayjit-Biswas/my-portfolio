@@ -23,7 +23,7 @@ const AddQuestion = () => {
     const submitquestion = (e) => {
         e.preventDefault();
         if (userrole == "admin") {
-            fetch("http://localhost:5000/question", {
+            fetch("https://coderchefserver.herokuapp.com/question", {
                 method: "POST",
                 headers: {
                     "content-type": "application/json",

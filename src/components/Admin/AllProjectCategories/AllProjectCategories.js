@@ -6,7 +6,7 @@ const AllProjectCategories = () => {
     const [AllprojectCategories, setAllprojectCategories] = useState([]);
     const [loading, setloading] = useState([true]);
     //fetch  project Categories
-    const url = "http://localhost:5000/project_categories";
+    const url = "https://coderchefserver.herokuapp.com/project_categories";
     useEffect(() => {
         fetch(url)
             .then((res) => res.json())
@@ -21,7 +21,7 @@ const AllProjectCategories = () => {
             "Are You Sure Delete Your Project categories...?"
         );
         if (sure) {
-            const url = `http://localhost:5000/project_categories/${id}`;
+            const url = `https://coderchefserver.herokuapp.com/project_categories/${id}`;
             fetch(url, {
                 method: "DELETE",
             })

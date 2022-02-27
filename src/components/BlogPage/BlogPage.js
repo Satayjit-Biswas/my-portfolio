@@ -10,7 +10,7 @@ const BlogPage = () => {
     const [loading, setloading] = useState([true]);
 
     //fetch  Serverblog
-    const url = "http://localhost:5000/blog";
+    const url = "https://coderchefserver.herokuapp.com/blog";
     useEffect(() => {
         fetch(url)
             .then((res) => res.json())

@@ -35,7 +35,7 @@ const AddProject = () => {
     const submitProject = (e) => {
         e.preventDefault();
         if (userrole === "admin") {
-            fetch("http://localhost:5000/project", {
+            fetch("https://coderchefserver.herokuapp.com/project", {
                 method: "POST",
                 headers: {
                     "content-type": "application/json",

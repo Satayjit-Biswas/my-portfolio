@@ -8,7 +8,7 @@ const ProjectDetails = () => {
     const [loading, setloading] = useState([true]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/project/${id}`)
+        fetch(`https://coderchefserver.herokuapp.com/project/${id}`)
             .then((res) => res.json())
             .then((data) => {
                 setGetProject(data);

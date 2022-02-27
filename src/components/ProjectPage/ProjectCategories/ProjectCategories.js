@@ -6,7 +6,7 @@ const ProjectCategories = (props) => {
     const [loading, setloading] = useState([true]);
 
     //fetch  ServerProject
-    const url = "http://localhost:5000/project_categories";
+    const url = "https://coderchefserver.herokuapp.com/project_categories";
     useEffect(() => {
         fetch(url)
             .then((res) => res.json())

@@ -58,7 +58,7 @@ const AddBlog = () => {
     const submitblog = (e) => {
         e.preventDefault();
         if (userrole === "admin") {
-            fetch("http://localhost:5000/blog", {
+            fetch("https://coderchefserver.herokuapp.com/blog", {
                 method: "POST",
                 headers: {
                     "content-type": "application/json",

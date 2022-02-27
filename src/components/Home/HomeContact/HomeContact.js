@@ -22,7 +22,7 @@ const HomeContact = () => {
     // submit email
     const submitemail = (e) => {
         e.preventDefault();
-        fetch("http://localhost:5000/sendemail", {
+        fetch("https://coderchefserver.herokuapp.com/sendemail", {
             method: "POST",
             headers: {
                 "content-type": "application/json",

@@ -5,7 +5,7 @@ const AllQuestion = () => {
     const [allquestion, setQuestion] = useState([]);
     const [loading, setloading] = useState([true]);
     //fetch  ServerUser
-    const url = "http://localhost:5000/question";
+    const url = "https://coderchefserver.herokuapp.com/question";
     useEffect(() => {
         fetch(url)
             .then((res) => res.json())
@@ -18,7 +18,7 @@ const AllQuestion = () => {
     const Deletequestion = (id) => {
         const sure = window.confirm("Are You Sure Delete Your question");
         if (sure) {
-            const url = `http://localhost:5000/question/${id}`;
+            const url = `https://coderchefserver.herokuapp.com/question/${id}`;
             fetch(url, {
                 method: "DELETE",
             })

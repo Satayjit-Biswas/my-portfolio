@@ -24,7 +24,7 @@ const AddService = () => {
     const submitService = (e) => {
         e.preventDefault();
         if (userrole == "admin") {
-            fetch("http://localhost:5000/service", {
+            fetch("https://coderchefserver.herokuapp.com/service", {
                 method: "POST",
                 headers: {
                     "content-type": "application/json",

@@ -4,7 +4,7 @@ const OurService = () => {
     const [loading, setLoading] = useState(true);
     const [HomeService, setHomeService] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/service")
+        fetch("https://coderchefserver.herokuapp.com/service")
             .then((res) => res.json())
             .then((data) => {
                 setHomeService(data);
