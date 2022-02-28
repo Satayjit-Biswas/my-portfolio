@@ -92,7 +92,13 @@ const PostDetails = () => {
                                     <div className="ads320_100"></div>
                                 </div>
                                 <RecentPost></RecentPost>
-                                <div className="ads336_280"></div>
+                                <div className="d-flex justify-content-center">
+                                    <div className="ads320_50"></div>
+                                    <div className="ads468_60"></div>
+                                    <div className="ads250_250"></div>
+                                    <div className="ads320_100"></div>
+                                    <div className="ads336_280"></div>
+                                </div>
                             </div>
                         </div>
                     </div>

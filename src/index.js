@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "./global/helper.css";
 import "./global/global.css";
-// import "./global/google_ads.css";
+import "./global/google_ads.css";
 import "./global/responsive.css";
 import { BrowserRouter } from "react-router-dom";
 

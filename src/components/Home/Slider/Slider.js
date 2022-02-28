@@ -1,6 +1,6 @@
 import React from "react";
 import "./Slider.css";
-import bg from "../../../assets/img/bg1.jpg";
+import bg from "../../../assets/img/bg1.png";
 import Typewriter from "typewriter-effect";
 
 const Slider = () => {

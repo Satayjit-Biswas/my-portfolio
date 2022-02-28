@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Header.css";
-import logo from "../../../assets/img/logo.png";
+import logo from "../../../assets/img/1up.png";
 import { Link } from "react-router-dom";
 import img from "../../../assets/img/Man-Icon.png";
 import $ from "jquery";
@@ -47,7 +47,7 @@ const Header = () => {
         <header className="header_area">
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-md-3 col-5">
+                    <div className="col-md-3 logo col-5">
                         <Link to="/">
                             <img src={logo} className="img-fluid logo" alt="" />
                         </Link>

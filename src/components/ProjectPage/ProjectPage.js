@@ -7,7 +7,7 @@ const ProjectPage = () => {
     const [allfilterProject, setfilterProject] = useState([]);
     const [loading, setloading] = useState([true]);
 
-    //fetch  ServerProject
+    // fetch  ServerProject
     const url = "https://coderchefserver.herokuapp.com/project";
     useEffect(() => {
         fetch(url)
@@ -26,7 +26,7 @@ const ProjectPage = () => {
         setfilterProject(updateProject);
     };
     return (
-        <div className="post_details sticky_top_gap">
+        <div className="sticky_top_gap">
             <div className="container">
                 <div className="blog_area_box">
                     <div className="row">

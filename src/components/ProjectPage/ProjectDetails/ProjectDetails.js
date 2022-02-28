@@ -143,7 +143,6 @@ const ProjectDetails = () => {
                                     <div className="ads320_100"></div>
                                     <div className="ads200_200"></div>
                                 </div>
-                                {/* <ProjectCategories></ProjectCategories> */}
                             </div>
                         </div>
                     </div>

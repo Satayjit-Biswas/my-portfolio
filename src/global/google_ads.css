@@ -2,52 +2,68 @@
 .ads728_90 {
     width: 728px;
     height: 90px;
-    background-color: rgba(100, 100, 100, 0.74);
+    background-image: url(../assets/img/728_90.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .ads336_280 {
     width: 336px;
     height: 280px;
-    background-color: rgb(116, 116, 116);
+    background-image: url(../assets/img/336_280.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .ads468_60 {
     width: 468px;
     height: 60px;
-    background-color: rgb(116, 116, 116);
+    background-image: url(../assets/img/468_60.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .ads160_600 {
     width: 160px;
     height: 600px;
-    background-color: rgb(116, 116, 116);
+    background-image: url(../assets/img/160_600.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .ads320_50 {
     width: 320px;
     height: 50px;
-    background-color: rgb(116, 116, 116);
+    background-image: url(../assets/img/320_50.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .ads320_100 {
     width: 320px;
     height: 100px;
-    background-color: rgb(116, 116, 116);
+    background-image: url(../assets/img/320_100.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.ads300_250 {
-    width: 300px;
-    height: 250px;
-    background-color: rgb(116, 116, 116);
-}
+
 .ads250_250 {
     width: 250px;
     height: 250px;
-    background-color: rgb(116, 116, 116);
+    background-image: url(../assets/img/500_500.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.ads234_60 {
-    width: 234px;
-    height: 60px;
-    background-color: rgb(116, 116, 116);
-}
+
 .ads200_200 {
     width: 200px;
     height: 200px;
-    background-color: rgb(116, 116, 116);
+    background-image: url(../assets/img/500_500.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 @media (min-width: 1200px) {
     /*-------------------- project and blog page --------------- */
@@ -149,6 +165,9 @@
     /* project details page  */
     .project_details .blog_right_site .ads200_200 {
         display: none;
+    }
+    .post_details .ads336_280 {
+        display: block;
     }
 }
 @media (max-width: 499.98px) {

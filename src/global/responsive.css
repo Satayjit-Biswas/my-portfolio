@@ -98,6 +98,9 @@
     }
     /*--------------------- project Page ------------------*/
     /*--------------------- blog Page ------------------*/
+    .blog_right_site {
+        margin: 0;
+    }
     /*--------------------- contact Page ------------------*/
     .contact_address_box {
         margin-top: 15px;
@@ -107,7 +110,7 @@
     }
     /*--------------------- Login Page ------------------*/
     .login_area .contact {
-        background-color: #111111;
+        background-color: #131414;
         padding: 7rem;
     }
 }
@@ -158,6 +161,7 @@
     }
     .login_icon {
         display: inline-block;
+        margin:0px;
     }
     /*--------------------- Service Page ------------------*/
     .accordion-button {
@@ -269,7 +273,7 @@
     /*--------------------- Login Page ------------------*/
 
     .login_area .contact {
-        background-color: #111111;
+        background-color: #131414;
         padding: 3rem;
     }
 }
