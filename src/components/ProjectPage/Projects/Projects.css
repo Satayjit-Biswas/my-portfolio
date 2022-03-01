@@ -40,14 +40,14 @@
     text-transform: capitalize;
     padding: 0 3px;
 }
-.project_item h3{
+.project_item h3 a{
     color: #fff;
     font-size: 18px;
     text-decoration: none;
     transition: .3s;
     cursor: pointer;
 }
-.project_item h3:hover{
+.project_item h3 a:hover{
     color: #fff000;
     
 }

@@ -9,6 +9,7 @@ const SingleProject = (props) => {
         project_title,
         project_start_date,
         project_end_date,
+        description1,
     } = props.projects;
     const navigate = useNavigate();
     const projectDetals = () => {
@@ -17,7 +18,7 @@ const SingleProject = (props) => {
     return (
         <div className="project_item">
             <div className="project_item_img1">
-                <a href="#">
+                <a href="#" onClick={projectDetals}>
                     <img src={img1} alt="" />
                 </a>
             </div>
@@ -36,19 +37,17 @@ const SingleProject = (props) => {
                     </p>
                 </div>
                 <h3 className="mt_5 mb_15">
-                    <span onClick={projectDetals}>{project_title}</span>
+                    <a href="#" onClick={projectDetals}>
+                        {project_title}
+                    </a>
                 </h3>
-                <p>
-                    This is an amazing bike store website. There are many
-                    variations of passages of Lorem Ipsum available, but the
-                    majority have suffered alteration in so....
-                </p>
+                <p>{description1.substr(0, 115)} ....</p>
                 <div className="post_read_more mt_20 mb_10">
-                    <button onClick={projectDetals} className="custom_btn">
+                    <a href="#" onClick={projectDetals} className="custom_btn">
                         <span className="left_border"></span>
                         details
                         <span className="right_border"></span>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

@@ -17,7 +17,9 @@ const SimpleRecentPost = (props) => {
     return (
         <div className="recentpost_area_box">
             <div className="recentpost_img">
-                <img onClick={BlogDetals} src={blog_img} alt="" />
+                <a href="#" onClick={BlogDetals}>
+                    <img src={blog_img} alt="" />
+                </a>
             </div>
             <div>
                 <h2 className="recentpost_title">

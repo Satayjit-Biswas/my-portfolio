@@ -103,18 +103,19 @@ const AddProject = () => {
                             <div className="col-md-6">
                                 <input
                                     name="project_start_date"
-                                    type="date"
+                                    type="text"
                                     placeholder="Project Start Date"
                                     className="inputbox"
                                     value={projectData.project_start_date}
                                     required
                                     onChange={InputEvent}
+                                    date
                                 />
                             </div>
                             <div className="col-md-6">
                                 <input
                                     name="project_end_date"
-                                    type="date"
+                                    type="text"
                                     placeholder="project End Date"
                                     className="inputbox"
                                     value={projectData.project_end_date}
