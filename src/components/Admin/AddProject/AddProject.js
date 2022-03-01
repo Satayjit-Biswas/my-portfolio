@@ -9,6 +9,8 @@ const AddProject = () => {
     const [projectData, setProjectData] = useState({
         project_title: "",
         project_categories: "",
+        project_start_date: "",
+        project_end_date: "",
         project_using: "",
         project_live_link: "",
         project_client_link: "",
@@ -45,6 +47,8 @@ const AddProject = () => {
                 setProjectData({
                     project_title: "",
                     project_categories: "",
+                    project_start_date: "",
+                    project_end_date: "",
                     project_using: "",
                     project_live_link: "",
                     project_client_link: "",
@@ -92,6 +96,28 @@ const AddProject = () => {
                                     placeholder="Project Categories"
                                     className="inputbox"
                                     value={projectData.project_categories}
+                                    required
+                                    onChange={InputEvent}
+                                />
+                            </div>
+                            <div className="col-md-6">
+                                <input
+                                    name="project_start_date"
+                                    type="date"
+                                    placeholder="Project Start Date"
+                                    className="inputbox"
+                                    value={projectData.project_start_date}
+                                    required
+                                    onChange={InputEvent}
+                                />
+                            </div>
+                            <div className="col-md-6">
+                                <input
+                                    name="project_end_date"
+                                    type="date"
+                                    placeholder="project End Date"
+                                    className="inputbox"
+                                    value={projectData.project_end_date}
                                     required
                                     onChange={InputEvent}
                                 />

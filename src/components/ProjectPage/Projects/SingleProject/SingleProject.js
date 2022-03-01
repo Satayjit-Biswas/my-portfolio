@@ -2,7 +2,14 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const SingleProject = (props) => {
-    const { _id, img1, project_categories, project_title } = props.projects;
+    const {
+        _id,
+        img1,
+        project_categories,
+        project_title,
+        project_start_date,
+        project_end_date,
+    } = props.projects;
     const navigate = useNavigate();
     const projectDetals = () => {
         navigate(`projectdetails/${_id}`);
@@ -17,10 +24,10 @@ const SingleProject = (props) => {
             <div className="project_item_text">
                 <div className="project_item_date">
                     <p>
-                        Start Date :<span> 21/10/2021</span>
+                        Start Date :<span> {project_start_date}</span>
                     </p>
                     <p>
-                        End Date :<span> 30/10/2021</span>
+                        End Date :<span> {project_end_date}</span>
                     </p>
                 </div>
                 <div className="project_categories mt_5">

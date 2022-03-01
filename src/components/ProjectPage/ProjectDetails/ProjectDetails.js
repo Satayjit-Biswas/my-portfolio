@@ -17,7 +17,8 @@ const ProjectDetails = () => {
     }, [id]);
     const {
         project_title,
-        project_categories,
+        project_start_date,
+        project_end_date,
         description1,
         description2,
         description3,
@@ -59,6 +60,16 @@ const ProjectDetails = () => {
                                     <h3 className="">{project_title}</h3>
                                     <div className="project_details_img my-3">
                                         <img src={img1} alt="" srcSet="" />
+                                    </div>
+                                    <div className="project_item_date">
+                                        <p>
+                                            Start Date :
+                                            <span> {project_start_date}</span>
+                                        </p>
+                                        <p>
+                                            End Date :
+                                            <span> {project_end_date}</span>
+                                        </p>
                                     </div>
                                     <h5>
                                         Which has been used in the project :

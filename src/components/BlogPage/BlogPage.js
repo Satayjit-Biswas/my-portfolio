@@ -23,7 +23,7 @@ const BlogPage = () => {
     // filter blog
     const filterblog = (categ) => {
         const updateblog = allblog.filter((item) => {
-            return item.blog_categories == categ;
+            return item.blog_categories.toLowerCase() == categ.toLowerCase();
         });
         setFilterBlog(updateblog);
     };

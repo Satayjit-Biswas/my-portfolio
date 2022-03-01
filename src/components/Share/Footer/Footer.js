@@ -16,19 +16,31 @@ const Footer = () => {
                             <img src={logo} alt="" className="img-fluid" />
                         </div>
                         <div className="footer-icon">
-                            <a href="#">
+                            <a
+                                href="https://www.facebook.com/coderchef.net"
+                                target="_blank"
+                            >
                                 <i className="fab fa-facebook-f"></i>
                             </a>
-                            <a href="#">
+                            <a
+                                href="https://twitter.com/satayjit_biswas"
+                                target="_blank"
+                            >
                                 <i className="fab fa-twitter"></i>
                             </a>
-                            <a href="#">
-                                <i className="fab fa-whatsapp"></i>
+                            <a href="https://www.youtube.com/channel/UCNcSqV3wd5skkUPJ-_HQqzQ">
+                                <i class="fab fa-youtube"></i>
                             </a>
-                            <a href="#">
+                            <a
+                                href="https://www.linkedin.com/in/satayjit-biswas/"
+                                target="_blank"
+                            >
                                 <i className="fab fa-linkedin-in"></i>
                             </a>
-                            <a href="#">
+                            <a
+                                href="https://github.com/Satayjit-Biswas"
+                                target="_blank"
+                            >
                                 <i className="fab fa-github"></i>
                             </a>
                         </div>

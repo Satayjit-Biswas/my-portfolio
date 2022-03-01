@@ -21,7 +21,7 @@ const ProjectPage = () => {
     // filter project
     const filterProject = (categ) => {
         const updateProject = allproject.filter((item) => {
-            return item.project_categories == categ;
+            return item.project_categories.toLowerCase() == categ.toLowerCase();
         });
         setfilterProject(updateProject);
     };
