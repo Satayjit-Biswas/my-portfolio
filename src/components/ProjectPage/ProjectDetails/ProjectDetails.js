@@ -67,7 +67,7 @@ const ProjectDetails = () => {
                                             <span> {project_start_date}</span>
                                         </p>
                                         <p>
-                                            End Date :
+                                            Finish Date :
                                             <span> {project_end_date}</span>
                                         </p>
                                     </div>

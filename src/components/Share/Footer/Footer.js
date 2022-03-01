@@ -28,7 +28,10 @@ const Footer = () => {
                             >
                                 <i className="fab fa-twitter"></i>
                             </a>
-                            <a href="https://www.youtube.com/channel/UCNcSqV3wd5skkUPJ-_HQqzQ">
+                            <a
+                                href="https://www.youtube.com/channel/UCNcSqV3wd5skkUPJ-_HQqzQ"
+                                target="_blank"
+                            >
                                 <i class="fab fa-youtube"></i>
                             </a>
                             <a

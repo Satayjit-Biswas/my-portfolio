@@ -161,7 +161,12 @@
     }
     .login_icon {
         display: inline-block;
-        margin:0px;
+    }
+    .menu .login_icon {
+        margin: 0;
+    }
+    .slider-text.mt_50 {
+        text-align: center;
     }
     /*--------------------- Service Page ------------------*/
     .accordion-button {

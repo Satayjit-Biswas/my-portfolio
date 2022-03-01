@@ -27,7 +27,7 @@ const SingleProject = (props) => {
                         Start Date :<span> {project_start_date}</span>
                     </p>
                     <p>
-                        End Date :<span> {project_end_date}</span>
+                        Finish Date :<span> {project_end_date}</span>
                     </p>
                 </div>
                 <div className="project_categories mt_5">
