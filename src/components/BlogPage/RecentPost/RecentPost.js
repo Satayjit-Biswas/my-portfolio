@@ -14,7 +14,7 @@ const RecentPost = () => {
         fetch(url)
             .then((res) => res.json())
             .then((blog) => {
-                setBlog(blog.slice(-5));
+                setBlog(blog.slice(-5).reverse());
                 setloading(false);
             });
     }, []);

@@ -15,7 +15,7 @@ const BlogPage = () => {
         fetch(url)
             .then((res) => res.json())
             .then((blog) => {
-                setBlog(blog);
+                setBlog(blog.reverse());
                 setFilterBlog(blog);
                 setloading(false);
             });

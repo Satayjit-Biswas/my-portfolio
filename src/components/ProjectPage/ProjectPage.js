@@ -13,7 +13,7 @@ const ProjectPage = () => {
         fetch(url)
             .then((res) => res.json())
             .then((project) => {
-                setProject(project);
+                setProject(project.reverse());
                 setfilterProject(project);
                 setloading(false);
             });
